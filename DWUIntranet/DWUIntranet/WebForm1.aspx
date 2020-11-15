@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
     <div>
     
-        <h1>This is a sample page</h1>
+        <h1>Create dashboard branch</h1>
     </div>
     </form>
 </body>
