@@ -114,7 +114,7 @@
                                                         <i class="material-icons">email</i>
                                                     </span>
                                                 </div>
-                                                <input type="email" class="form-control" placeholder="Email...">
+                                                <input type="email" class="form-control" placeholder="Email Address...">
                                             </div>
                                         </span>
                                         <span class="bmd-form-group">
