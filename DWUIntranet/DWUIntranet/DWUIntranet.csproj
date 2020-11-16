@@ -130,6 +130,7 @@
     <Content Include="assets\js\plugins\nouislider.min.js" />
     <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
     <Content Include="assets\js\plugins\sweetalert2.js" />
+    <Content Include="login.aspx" />
     <Content Include="packages.config" />
     <Content Include="assets\css\material-dashboard.css.map" />
     <Content Include="assets\js\material-dashboard.js.map" />
@@ -345,6 +346,13 @@
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
