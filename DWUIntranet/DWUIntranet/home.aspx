@@ -28,7 +28,7 @@ ul, #myUL {
 .caret-down::before {
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg); /* Safari */'
-  transform: rotate(90deg);  
+  transform: rotate(90deg);
 }
 
 /*.nested {
@@ -87,7 +87,7 @@ ul, #myUL {
 <%--<div class="list-group">
   <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
 
-  
+
   <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
   <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
   <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
@@ -100,7 +100,7 @@ ul, #myUL {
 <ul id="myUL">
   <li><span class="caret">2020-01-20</span>
     <ul class="nested">
-      <li><a href="#">Welcome Message - President</a></li>
+      <li><a href="#">Welcome Message - Fucker</a></li>
     </ul>
   </li>
   <li><span class="caret">2019-08-04</span>
