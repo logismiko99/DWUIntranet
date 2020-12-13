@@ -73,3 +73,5 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
+DWUIntranet/DWUIntranet/obj/Debug/DWUIntranet.csproj.FileListAbsolute.txt
+DWUIntranet/DWUIntranet/obj/Debug/DWUIntranet.csprojResolveAssemblyReference.cache
