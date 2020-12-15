@@ -111,25 +111,27 @@
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">
-                                                        <i class="material-icons">email</i>
+                                                        <i class="material-icons">Username</i>
                                                     </span>
                                                 </div>
-                                                <input type="email" class="form-control" placeholder="Email Address...">
+                                                
+                                                <asp:TextBox ID="txtUsername" class="form-control" placeholder="Username..." runat="server"></asp:TextBox>
                                             </div>
                                         </span>
                                         <span class="bmd-form-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">
-                                                        <i class="material-icons">lock_outline</i>
+                                                        <i class="material-icons">Password</i>
                                                     </span>
                                                 </div>
-                                                <input type="password" class="form-control" placeholder="Password...">
+                                                <asp:TextBox ID="txtPassword" class="form-control" placeholder="Password..." runat="server"></asp:TextBox>
                                             </div>
                                         </span>
                                     </div>
                                     <div class="card-footer justify-content-center">
-                                        <a href="home.aspx" class="btn btn-rose btn-link btn-lg">Lets Go</a>
+                                        <asp:Button ID="btnLogin" class="btn btn-rose btn-link btn-lg" runat="server" Text="Lets Go" OnClick="btnLogin_Click" />
+                                        
                                     </div>
                                 </div>
                             </form>
