@@ -1,4 +1,6 @@
-﻿<!--
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="DWUIntranet.login"   EnableEventValidation="false" %>
+
+<!--
 =========================================================
 Material Dashboard PRO - v2.1.2
 =========================================================
@@ -10,6 +12,12 @@ Coded by Creative Tim
 =========================================================
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
+
+
+
+
+
+
 <html lang="en">
 
 <head>
@@ -107,7 +115,7 @@ The above copyright notice and this permission notice shall be included in all c
                         </span>
                       </div>
                       <%--<input type="text" class="form-control" placeholder="First Name...">--%>
-                         <asp:TextBox ID="txtUsername" class="form-control" placeholder="Username..." runat="server"></asp:TextBox>
+                         <asp:TextBox ID="txtUsername" class="form-control" placeholder="Username..." runat="server" Text="intranettest@dwu.ac.pg"></asp:TextBox>
                         
                     </div>
     
@@ -120,12 +128,14 @@ The above copyright notice and this permission notice shall be included in all c
                           <i class="material-icons">lock_outline</i>
                         </span>
                       </div>
-                     <asp:TextBox ID="txtPassword" class="form-control" placeholder="Password..." runat="server"></asp:TextBox>
+                     <asp:TextBox ID="txtPassword" class="form-control" placeholder="Password..." runat="server" Text="M@dang@2020#511" ></asp:TextBox>
                     </div>
                   </span>
                 </div>
                 <div class="card-footer justify-content-center">
-                  <a href="#pablo" class="btn btn-rose btn-link btn-lg">Lets Go</a>
+                  
+                    
+                <asp:Button ID="btnLogin" class="btn btn-rose btn-link btn-lg" runat="server" Text="Login" OnClick="btnLogin_Click"  />
                 </div>
               </div>
             </form>
@@ -370,3 +380,4 @@ The above copyright notice and this permission notice shall be included in all c
 </body>
 
 </html>
+

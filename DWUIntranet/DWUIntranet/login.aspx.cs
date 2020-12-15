@@ -22,7 +22,7 @@ namespace DWUIntranet
             string domain = WebConfigurationManager.AppSettings["domain"];
 
             LoginModel lg = new LoginModel();
-            var isValid = lg.ValidateUser(domain,txtUsername.Text, txtPassword.Text);
+            var isValid = lg.ValidateUser(domain,txtUsername.Text,txtPassword.Text);
         }
     }
 }
