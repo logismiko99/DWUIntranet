@@ -23,6 +23,15 @@ namespace DWUIntranet
 
             LoginModel lg = new LoginModel();
             var isValid = lg.ValidateUser(domain,txtUsername.Text,txtPassword.Text);
+
+            if (isValid)
+            {
+                Response.Redirect("home.aspx");
+            }
+            else
+            {
+                Response.Redirect("login.aspx");
+            }
         }
     }
 }
