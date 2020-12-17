@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="DWUIntranet.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="homestd.aspx.cs" Inherits="DWUIntranet.WebForm3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
 ul, #myUL {
@@ -10,7 +10,6 @@ ul, #myUL {
   padding: 0;
 }
 
-
 .caret {
   cursor: pointer;
   -webkit-user-select: none; /* Safari 3.1+ */
@@ -18,6 +17,7 @@ ul, #myUL {
   -ms-user-select: none; /* IE 10+ */
   user-select: none;
 }
+
 
 .caret::before {
   content: "\25B6";
@@ -126,3 +126,4 @@ ul, #myUL {
             </div>
           </div>
 </asp:Content>
+
