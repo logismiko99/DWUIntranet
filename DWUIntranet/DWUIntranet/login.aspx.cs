@@ -19,12 +19,17 @@ namespace DWUIntranet
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string domain = WebConfigurationManager.AppSettings["domain"];
+            string domain1 = WebConfigurationManager.AppSettings["domain1"];
+            string domain2 = WebConfigurationManager.AppSettings["domain2"];
 
             LoginModel lg = new LoginModel();
-            var isValid = lg.ValidateUser(domain,txtUsername.Text,txtPassword.Text);
-
-            if (isValid)
+            
+            if (lg.ValidateUser(domain1, txtUsername.Text, txtPassword.Text))
+            {
+                Response.Redirect("home.aspx");
+                
+            }
+            else if (lg.ValidateUser(domain2, txtUsername.Text, txtPassword.Text))
             {
                 Response.Redirect("home.aspx");
             }
@@ -32,6 +37,7 @@ namespace DWUIntranet
             {
                 Response.Redirect("login.aspx");
             }
+            
         }
     }
 }
