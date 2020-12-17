@@ -10,6 +10,7 @@ ul, #myUL {
   padding: 0;
 }
 
+
 .caret {
   cursor: pointer;
   -webkit-user-select: none; /* Safari 3.1+ */

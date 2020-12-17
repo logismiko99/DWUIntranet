@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -131,6 +132,7 @@
     <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
     <Content Include="assets\js\plugins\sweetalert2.js" />
     <Content Include="home.aspx" />
+    <Content Include="homestd.aspx" />
     <Content Include="login.aspx" />
     <Content Include="packages.config" />
     <Content Include="assets\css\material-dashboard.css.map" />
@@ -356,6 +358,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="homestd.aspx.cs">
+      <DependentUpon>homestd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homestd.aspx.designer.cs">
+      <DependentUpon>homestd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -397,7 +406,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50401</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50401/</IISUrl>
+          <IISUrl>http://localhost:26758/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
