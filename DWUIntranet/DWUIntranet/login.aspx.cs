@@ -32,7 +32,7 @@ namespace DWUIntranet
             }
             else if (lg.ValidateUser(student, txtUsername.Text, txtPassword.Text))
             {
-                Response.Redirect("home.aspx");
+                Response.Redirect("homestd.aspx");
             }
             else
             {
