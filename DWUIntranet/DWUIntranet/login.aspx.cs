@@ -24,6 +24,7 @@ namespace DWUIntranet
 
             LoginModel lg = new LoginModel();
             
+            // Validate User by Staff or Student
             if (lg.ValidateUser(staff, txtUsername.Text, txtPassword.Text))
             {
                 Response.Redirect("home.aspx");
