@@ -26,7 +26,7 @@ The above copyright notice and this permission notice shall be included in all c
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Material Dashboard PRO by Creative Tim
+   DWUINtranet
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -39,47 +39,15 @@ The above copyright notice and this permission notice shall be included in all c
 </head>
 
 <body class="off-canvas-sidebar">
-    
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top text-white">
     <div class="container">
       <div class="navbar-wrapper">
-        <a class="navbar-brand" href="javascript:;">Login Page by test</a>
+        <a class="navbar-brand" href="javascript:;">Divine Word University</a>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="navbar-toggler-icon icon-bar"></span>
-        <span class="navbar-toggler-icon icon-bar"></span>
-        <span class="navbar-toggler-icon icon-bar"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="../dashboard.html" class="nav-link">
-              <i class="material-icons">dashboard</i>
-              Dashboard
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a href="../pages/register.html" class="nav-link">
-              <i class="material-icons">person_add</i>
-              Register
-            </a>
-          </li>
-          <li class="nav-item  active ">
-            <a href="../pages/login.html" class="nav-link">
-              <i class="material-icons">fingerprint</i>
-              Login
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a href="../pages/lock.html" class="nav-link">
-              <i class="material-icons">lock_open</i>
-              Lock
-            </a>
-          </li>
-        </ul>
-      </div>
+
+
     </div>
   </nav>
   <!-- End Navbar -->
@@ -93,20 +61,10 @@ The above copyright notice and this permission notice shall be included in all c
               <div class="card card-login card-hidden">
                 <div class="card-header card-header-rose text-center">
                   <h4 class="card-title">Login</h4>
-                  <div class="social-line">
-                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                      <i class="fa fa-facebook-square"></i>
-                    </a>
-                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                      <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                      <i class="fa fa-google-plus"></i>
-                    </a>
-                  </div>
+
                 </div>
                 <div class="card-body ">
-                  <p class="card-description text-center">Or Be Classical</p>
+                  <p class="card-description text-center"></p>
                   <span class="bmd-form-group">
                     <div class="input-group">
                       <div class="input-group-prepend">
@@ -115,12 +73,12 @@ The above copyright notice and this permission notice shall be included in all c
                         </span>
                       </div>
                       <%--<input type="text" class="form-control" placeholder="First Name...">--%>
-                         <asp:TextBox ID="txtUsername" class="form-control" placeholder="Username..." runat="server" Text="intranettest@dwu.ac.pg"></asp:TextBox>
-                        
+                         <asp:TextBox ID="txtUsername" class="form-control" placeholder="Username..." runat="server" ></asp:TextBox>
+
                     </div>
-    
+
                   </span>
-               
+
                   <span class="bmd-form-group">
                     <div class="input-group">
                       <div class="input-group-prepend">
@@ -128,13 +86,13 @@ The above copyright notice and this permission notice shall be included in all c
                           <i class="material-icons">lock_outline</i>
                         </span>
                       </div>
-                     <asp:TextBox ID="txtPassword" class="form-control" placeholder="Password..." runat="server" Text="M@dang@2020#511" ></asp:TextBox>
+                     <asp:TextBox ID="txtPassword" class="form-control" placeholder="Password..." runat="server" ></asp:TextBox>
                     </div>
                   </span>
                 </div>
                 <div class="card-footer justify-content-center">
-                  
-                    
+
+
                 <asp:Button ID="btnLogin" class="btn btn-rose btn-link btn-lg" runat="server" Text="Login" OnClick="btnLogin_Click"  />
                 </div>
               </div>
@@ -143,39 +101,7 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
       </div>
       <footer class="footer">
-        <div class="container">
-          <nav class="float-left">
-            <ul>
-              <li>
-                <a href="https://www.creative-tim.com/">
-                  Creative Tim
-                </a>
-              </li>
-              <li>
-                <a href="https://www.creative-tim.com/presentation">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="https://www.creative-tim.com/blog">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://www.creative-tim.com/license">
-                  Licenses
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="copyright float-right">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script>, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a> for a better web.
-          </div>
-        </div>
+
       </footer>
     </div>
   </div>
