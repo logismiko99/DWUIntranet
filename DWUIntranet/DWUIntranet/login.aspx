@@ -5,9 +5,9 @@
 Material Dashboard PRO - v2.1.2
 =========================================================
 
-Product Page: https://www.creative-tim.com/product/material-dashboard-pro
-Copyright 2020 Creative Tim (https://www.creative-tim.com)
-Coded by Creative Tim
+Product Page: https://www.logismiko.com/product/material-dashboard-pro
+Copyright 2020 Creative Tim (https://www.logismiko.com)
+Coded by Logismiko
 
 =========================================================
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
