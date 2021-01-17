@@ -67,8 +67,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\froala_editor.css" />
+    <Content Include="assets\css\froala_editor.min.css" />
+    <Content Include="assets\css\froala_editor.pkgd.css" />
+    <Content Include="assets\css\froala_editor.pkgd.min.css" />
+    <Content Include="assets\css\froala_style.css" />
+    <Content Include="assets\css\froala_style.min.css" />
     <Content Include="assets\css\material-dashboard.css" />
     <Content Include="assets\css\material-dashboard.min.css" />
+    <Content Include="assets\css\plugins.pkgd.css" />
+    <Content Include="assets\css\plugins.pkgd.min.css" />
+    <Content Include="assets\css\richtext.min.css" />
     <Content Include="assets\demo\demo.css" />
     <Content Include="assets\demo\demo.js" />
     <Content Include="assets\img\apple-icon.png" />
@@ -112,25 +122,67 @@
     <Content Include="assets\js\core\bootstrap-material-design.min.js" />
     <Content Include="assets\js\core\jquery.min.js" />
     <Content Include="assets\js\core\popper.min.js" />
+    <Content Include="assets\js\editor.js" />
+    <Content Include="assets\js\froala_editor.min.js" />
+    <Content Include="assets\js\froala_editor.pkgd.min.js" />
+    <Content Include="assets\js\jquery.richtext.min.js" />
     <Content Include="assets\js\material-dashboard.js" />
     <Content Include="assets\js\material-dashboard.min.js" />
+    <Content Include="assets\js\plugins.pkgd.min.js" />
+    <Content Include="assets\js\plugins\align.min.js" />
     <Content Include="assets\js\plugins\arrive.min.js" />
     <Content Include="assets\js\plugins\bootstrap-datetimepicker.min.js" />
     <Content Include="assets\js\plugins\bootstrap-notify.js" />
     <Content Include="assets\js\plugins\bootstrap-selectpicker.js" />
     <Content Include="assets\js\plugins\bootstrap-tagsinput.js" />
     <Content Include="assets\js\plugins\chartist.min.js" />
+    <Content Include="assets\js\plugins\char_counter.min.js" />
+    <Content Include="assets\js\plugins\code_beautifier.min.js" />
+    <Content Include="assets\js\plugins\code_view.min.js" />
+    <Content Include="assets\js\plugins\colors.min.js" />
+    <Content Include="assets\js\plugins\cryptojs.min.js" />
+    <Content Include="assets\js\plugins\draggable.min.js" />
+    <Content Include="assets\js\plugins\edit_in_popup.min.js" />
+    <Content Include="assets\js\plugins\emoticons.min.js" />
+    <Content Include="assets\js\plugins\entities.min.js" />
+    <Content Include="assets\js\plugins\file.min.js" />
+    <Content Include="assets\js\plugins\files_manager.min.js" />
+    <Content Include="assets\js\plugins\font_family.min.js" />
+    <Content Include="assets\js\plugins\font_size.min.js" />
+    <Content Include="assets\js\plugins\forms.min.js" />
     <Content Include="assets\js\plugins\fullcalendar.min.js" />
+    <Content Include="assets\js\plugins\fullscreen.min.js" />
+    <Content Include="assets\js\plugins\help.min.js" />
+    <Content Include="assets\js\plugins\image.min.js" />
+    <Content Include="assets\js\plugins\image_manager.min.js" />
+    <Content Include="assets\js\plugins\inline_class.min.js" />
+    <Content Include="assets\js\plugins\inline_style.min.js" />
     <Content Include="assets\js\plugins\jasny-bootstrap.min.js" />
     <Content Include="assets\js\plugins\jquery-jvectormap.js" />
     <Content Include="assets\js\plugins\jquery.bootstrap-wizard.js" />
     <Content Include="assets\js\plugins\jquery.dataTables.min.js" />
     <Content Include="assets\js\plugins\jquery.tagsinput.js" />
     <Content Include="assets\js\plugins\jquery.validate.min.js" />
+    <Content Include="assets\js\plugins\line_breaker.min.js" />
+    <Content Include="assets\js\plugins\line_height.min.js" />
+    <Content Include="assets\js\plugins\link.min.js" />
+    <Content Include="assets\js\plugins\lists.min.js" />
     <Content Include="assets\js\plugins\moment.min.js" />
     <Content Include="assets\js\plugins\nouislider.min.js" />
+    <Content Include="assets\js\plugins\paragraph_format.min.js" />
+    <Content Include="assets\js\plugins\paragraph_style.min.js" />
     <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="assets\js\plugins\print.min.js" />
+    <Content Include="assets\js\plugins\quick_insert.min.js" />
+    <Content Include="assets\js\plugins\quote.min.js" />
+    <Content Include="assets\js\plugins\save.min.js" />
+    <Content Include="assets\js\plugins\special_characters.min.js" />
     <Content Include="assets\js\plugins\sweetalert2.js" />
+    <Content Include="assets\js\plugins\table.min.js" />
+    <Content Include="assets\js\plugins\trim_video.min.js" />
+    <Content Include="assets\js\plugins\url.min.js" />
+    <Content Include="assets\js\plugins\video.min.js" />
+    <Content Include="assets\js\plugins\word_paste.min.js" />
     <Content Include="home.aspx" />
     <Content Include="homestd.aspx" />
     <Content Include="login.aspx" />
@@ -345,6 +397,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="test.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -381,9 +434,21 @@
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="assets\css\plugins\" />
+    <Folder Include="assets\css\themes\" />
+    <Folder Include="assets\css\third_party\" />
+    <Folder Include="assets\js\languages\" />
+    <Folder Include="assets\js\third_party\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
