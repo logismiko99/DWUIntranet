@@ -53,6 +53,13 @@ ipch/
 *.opensdf
 *.sdf
 *.cachefile
+*/bin
+*/obj
+*/bin/*
+*/obj/*
+*/.vs
+*/.vs/*
+*/*.csproj.user
 
 # Visual Studio profiler
 *.psess
