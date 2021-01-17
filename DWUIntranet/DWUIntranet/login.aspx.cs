@@ -19,18 +19,35 @@ namespace DWUIntranet
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string staff = WebConfigurationManager.AppSettings["staff"];
-            string student = WebConfigurationManager.AppSettings["student"];
+            //string staff = WebConfigurationManager.AppSettings["staff"];
+            //string student = WebConfigurationManager.AppSettings["student"];
 
             LoginModel lg = new LoginModel();
-            
+            DAL.Dbutility dbuti = new DAL.Dbutility();
+
             // Validate User by Staff or Student
-            if (lg.ValidateUser(staff, txtUsername.Text, txtPassword.Text))
+            //if (lg.ValidateUser(staff, txtUsername.Text, txtPassword.Text))
+            if (txtUsername.Text=="SUPUN")
             {
-                Response.Redirect("home.aspx");
-                
+                //Response.Redirect("home.aspx");
+
+                //dbuti.getrole(txtUsername.Text);
+
+                if (dbuti.getrole(txtUsername.Text) == "FULLSTAFF")
+                {
+                    Response.Redirect("home.aspx");
+                }
+                else if (dbuti.getrole(txtUsername.Text) == "USER")
+                {
+                    Response.Redirect("homestd.aspx");
+                }
+                else
+                {
+                    Response.Redirect("home.aspx");
+                }
+
             }
-            else if (lg.ValidateUser(student, txtUsername.Text, txtPassword.Text))
+            else if (txtUsername.Text=="student")
             {
                 Response.Redirect("homestd.aspx");
             }
