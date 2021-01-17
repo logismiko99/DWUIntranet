@@ -1,7 +1,11 @@
-﻿using System;
+﻿using DAL;
+using DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Services;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
@@ -16,6 +20,25 @@ namespace DWUIntranet.pgnavibarside
             (Page.Master.FindControl("Label1") as Label).Text = "President's Desk";
             (Page.Master.FindControl("sidedash") as HtmlAnchor).HRef = "~/pghome/home.aspx";
 
+            
+        }
+
+        [System.Web.Services.WebMethod]
+        public static PageContent setcontent(string pageid)
+        {
+            Dbutility db = new Dbutility();
+            PageContent c = new PageContent();
+            c = db.getpagecontent(pageid);
+
+            return c;
+        }
+
+
+        [WebMethod]
+        [ScriptMethod(UseHttpGet = true)]
+        public static string SendMessage()
+        {
+            return "hiiii";
         }
     }
 }
