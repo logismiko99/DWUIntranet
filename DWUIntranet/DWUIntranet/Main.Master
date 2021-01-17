@@ -93,98 +93,98 @@ The above copyright notice and this permission notice shall be included in all c
           </div>
         </div>--%>
         <ul class="nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="../examples/dashboard.html">
+          <li id="activedash" runat="server" class="nav-item">
+            <a id="sidedash" class="nav-link" runat="server">
               <i class="material-icons">dashboard</i>
               <p> Dashboard </p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li id="activepresident" runat="server" class="nav-item ">
             <a class="nav-link" href="../pgnavibarside/presidentdesk.aspx">
               <i class="material-icons">widgets</i>
               <p> President's Desk </p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="../examples/charts.html">
+          <li id="activeacademic" runat="server" class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/academicaffairs.aspx">
               <i class="material-icons">timeline</i>
               <p> Academic Affairs </p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activequality" runat="server" class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/qualityassurance.aspx">
               <i class="material-icons">date_range</i>
               <p> Quality Assurance </p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activeresearch" runat="server" class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/research.aspx">
               <i class="material-icons">date_range</i>
               <p> Research </p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activestudentaffair" runat="server"  class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/studentaffairs.aspx">
               <i class="material-icons">date_range</i>
               <p> Student Affairs </p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activefriendlib" runat="server"  class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/friendshiplibrary.aspx">
               <i class="material-icons">date_range</i>
               <p> Friendship Library </p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activeict" runat="server"  class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/ictservice.aspx">
               <i class="material-icons">date_range</i>
               <p> ICT Services </p>
             </a>
           </li>
-          <li class="nav-item "  runat="server" id="dash1"> 
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activehrmgt" runat="server"  class="nav-item "> 
+            <a class="nav-link" href="../pgnavibarside/hrmanagement.aspx">
               <i class="material-icons">date_range</i>
               <p> HR Management </p>
             </a>
           </li>
-          <li class="nav-item "  runat="server" id="dash2">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activefinancedivi" runat="server"  class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/financedivision.aspx">
               <i class="material-icons">date_range</i>
               <p> Finance Division </p>
             </a>
           </li>
-          <li class="nav-item "  runat="server" id="dash3">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activedsr" runat="server"  class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/dsr.aspx">
               <i class="material-icons">date_range</i>
               <p> DSR </p>
             </a>
           </li>
-          <li class="nav-item "  runat="server" id="dash4">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activestaffdirectory" runat="server"  class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/staffdirectory.aspx">
               <i class="material-icons">date_range</i>
               <p> Staff Directory </p>
             </a>
           </li>
-          <li class="nav-item "  runat="server" id="dash5">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activenews" runat="server"  class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/news.aspx">
               <i class="material-icons">date_range</i>
               <p> News </p>
             </a>
           </li>
-          <li class="nav-item "  runat="server" id="dash6">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activeevents" runat="server"  class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/events.aspx">
               <i class="material-icons">date_range</i>
               <p> Events </p>
             </a>
           </li>
-          <li class="nav-item "  runat="server" id="dash7">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activepublicservice" runat="server"  class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/publicservice.aspx">
               <i class="material-icons">date_range</i>
               <p> Public Services </p>
             </a>
           </li>
-          <li class="nav-item "  runat="server" id="dash8">
-            <a class="nav-link" href="../examples/calendar.html">
+          <li id="activeboxofideas" runat="server"  class="nav-item ">
+            <a class="nav-link" href="../pgnavibarside/boxofideas.aspx">
               <i class="material-icons">date_range</i>
               <p> Box of Ideas </p>
             </a>
@@ -203,7 +203,7 @@ The above copyright notice and this permission notice shall be included in all c
                 <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
               </button>
             </div>
-            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+            <a class="navbar-brand" href="javascript:;"><asp:Label ID="Label1" runat="server" Text=""></asp:Label></a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>

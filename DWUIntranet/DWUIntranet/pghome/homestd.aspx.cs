@@ -12,18 +12,23 @@ namespace DWUIntranet
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            (Page.Master.FindControl("dash1") as HtmlControl).Attributes.Add("class", "tabhide");
-            (Page.Master.FindControl("dash2") as HtmlControl).Attributes.Add("class", "tabhide");
-            (Page.Master.FindControl("dash3") as HtmlControl).Attributes.Add("class", "tabhide");
-            (Page.Master.FindControl("dash4") as HtmlControl).Attributes.Add("class", "tabhide");
-            (Page.Master.FindControl("dash5") as HtmlControl).Attributes.Add("class", "tabhide");
-            (Page.Master.FindControl("dash6") as HtmlControl).Attributes.Add("class", "tabhide");
-            (Page.Master.FindControl("dash7") as HtmlControl).Attributes.Add("class", "tabhide");
-            (Page.Master.FindControl("dash8") as HtmlControl).Attributes.Add("class", "tabhide");
+            (Page.Master.FindControl("activedash") as HtmlControl).Attributes.Add("class", "active");
+
+            (Page.Master.FindControl("activehrmgt") as HtmlControl).Attributes.Add("class", "tabhide");
+            (Page.Master.FindControl("activefinancedivi") as HtmlControl).Attributes.Add("class", "tabhide");
+            (Page.Master.FindControl("activedsr") as HtmlControl).Attributes.Add("class", "tabhide");
+            (Page.Master.FindControl("activestaffdirectory") as HtmlControl).Attributes.Add("class", "tabhide");
+            (Page.Master.FindControl("activenews") as HtmlControl).Attributes.Add("class", "tabhide");
+            (Page.Master.FindControl("activeevents") as HtmlControl).Attributes.Add("class", "tabhide");
+            (Page.Master.FindControl("activepublicservice") as HtmlControl).Attributes.Add("class", "tabhide");
+            (Page.Master.FindControl("activeboxofideas") as HtmlControl).Attributes.Add("class", "tabhide");
 
             (Page.Master.FindControl("nav1") as HtmlControl).Attributes.Add("class", "tabhide");
             (Page.Master.FindControl("nav2") as HtmlControl).Attributes.Add("class", "tabhide");
             (Page.Master.FindControl("nav3") as HtmlControl).Attributes.Add("class", "tabhide");
+
+            (Page.Master.FindControl("Label1") as Label).Text = "Dashboard";
+
         }
     }
 }

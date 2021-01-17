@@ -22,76 +22,166 @@ namespace DWUIntranet {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
-        /// dash1 control.
+        /// activedash control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dash1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activedash;
         
         /// <summary>
-        /// dash2 control.
+        /// sidedash control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dash2;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor sidedash;
         
         /// <summary>
-        /// dash3 control.
+        /// activepresident control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dash3;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activepresident;
         
         /// <summary>
-        /// dash4 control.
+        /// activeacademic control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dash4;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activeacademic;
         
         /// <summary>
-        /// dash5 control.
+        /// activequality control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dash5;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activequality;
         
         /// <summary>
-        /// dash6 control.
+        /// activeresearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dash6;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activeresearch;
         
         /// <summary>
-        /// dash7 control.
+        /// activestudentaffair control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dash7;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activestudentaffair;
         
         /// <summary>
-        /// dash8 control.
+        /// activefriendlib control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dash8;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activefriendlib;
+        
+        /// <summary>
+        /// activeict control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activeict;
+        
+        /// <summary>
+        /// activehrmgt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activehrmgt;
+        
+        /// <summary>
+        /// activefinancedivi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activefinancedivi;
+        
+        /// <summary>
+        /// activedsr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activedsr;
+        
+        /// <summary>
+        /// activestaffdirectory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activestaffdirectory;
+        
+        /// <summary>
+        /// activenews control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activenews;
+        
+        /// <summary>
+        /// activeevents control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activeevents;
+        
+        /// <summary>
+        /// activepublicservice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activepublicservice;
+        
+        /// <summary>
+        /// activeboxofideas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activeboxofideas;
+        
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// nav1 control.
