@@ -44,6 +44,7 @@
 
 
         <button id="btnclick">View</button>
+         <button id="btnload">Load</button>
         <div id="main"> 
 
 
@@ -66,6 +67,17 @@
 
            
             $("#main").append($("#output").text());
+        });
+
+
+        $("#btnload").click(function () {
+
+            var $iframe = $('iframe');
+            $iframe.ready(function () {
+                $iframe.contents().find("body").append($("#main").html());
+            });
+
+            
         });
 
     </script>
