@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace DWUIntranet
+namespace DWUIntranet.pgnavibarside
 {
     public partial class presidentdesk : System.Web.UI.Page
     {

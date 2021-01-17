@@ -35,21 +35,21 @@ namespace DWUIntranet
 
                 if (dbuti.getrole(txtUsername.Text) == "FULLSTAFF")
                 {
-                    Response.Redirect("home.aspx");
+                    Response.Redirect("pghome/home.aspx");
                 }
                 else if (dbuti.getrole(txtUsername.Text) == "USER")
                 {
-                    Response.Redirect("homestd.aspx");
+                    Response.Redirect("pghome/homestd.aspx");
                 }
                 else
                 {
-                    Response.Redirect("home.aspx");
+                    Response.Redirect("pghome/home.aspx");
                 }
 
             }
             else if (txtUsername.Text=="student")
             {
-                Response.Redirect("homestd.aspx");
+                Response.Redirect("pghome/homestd.aspx");
             }
             else
             {
