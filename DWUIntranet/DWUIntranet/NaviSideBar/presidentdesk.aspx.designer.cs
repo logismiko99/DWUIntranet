@@ -10,6 +10,6 @@
 namespace DWUIntranet {
     
     
-    public partial class presidentdesk {
+    public partial class WebForm2 {
     }
 }
