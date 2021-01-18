@@ -158,3 +158,5 @@ FakesAssemblies/
 ipch/atr tp-e6975b4b/atr tp-ffcb10b7.ipch
 ATR TP.sdf
 ATR TP/ATR TP.vcxproj
+DWUIntranet/DWUIntranet/DWUIntranet.csproj.user
+DWUIntranet/DWUIntranet/DWUIntranet.csproj
