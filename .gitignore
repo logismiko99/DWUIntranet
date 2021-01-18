@@ -161,3 +161,4 @@ ATR TP/ATR TP.vcxproj
 DWUIntranet/DWUIntranet/DWUIntranet.csproj.user
 DWUIntranet/DWUIntranet/DWUIntranet.csproj
 *.csproj
+*.user
