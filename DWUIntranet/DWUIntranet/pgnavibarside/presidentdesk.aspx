@@ -41,11 +41,9 @@
             success: function (data) {
                
 
-                alert(data);
-
-                $("#presidentdesig").text(data.Title);
-                $("#presidentname").text(data.Name);
-                $("#presidentcontent").append(data.MainContent);
+                $("#presidentdesig").text(data.d.Title);
+                $("#presidentname").text(data.d.Name);
+                $("#presidentcontent").append(data.d.MainContent);
 
                       
             }

@@ -24,6 +24,7 @@ namespace DWUIntranet.pgnavibarside
         }
 
         [System.Web.Services.WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]//Specify return format.
         public static PageContent SetContent(string pageid)
         {
             Dbutility db = new Dbutility();
