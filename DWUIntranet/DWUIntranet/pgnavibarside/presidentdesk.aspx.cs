@@ -24,7 +24,7 @@ namespace DWUIntranet.pgnavibarside
         }
 
         [System.Web.Services.WebMethod]
-        public static PageContent setcontent(string pageid)
+        public static PageContent SetContent(string pageid)
         {
             Dbutility db = new Dbutility();
             PageContent c = new PageContent();
@@ -34,11 +34,6 @@ namespace DWUIntranet.pgnavibarside
         }
 
 
-        [WebMethod]
-        [ScriptMethod(UseHttpGet = true)]
-        public static string SendMessage()
-        {
-            return "hiiii";
-        }
+        
     }
 }

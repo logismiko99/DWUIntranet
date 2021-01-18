@@ -3,7 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:HiddenField ID="hfpageid" runat="server" Value="PG001" />
+   
+
+    <input type="hidden" id="hfpageid" value="PG001" />
     <div class="row">
         <div class="col-md-8">
             <div class="card card-profile">
@@ -29,19 +31,21 @@
     <script>
 
     $(document).ready(function () {
-
+        var pageid =$("#hfpageid").val();
         $.ajax({
-            url: "presidentdesk.aspx/SendMessage",
-            type: "GET",
-            cache: false,
+            url: 'presidentdesk.aspx/SetContent',
+            method: 'post',
+            contentType:'application/json',
+            data: JSON.stringify({ "pageid": pageid }),
+            dataType:'json',
             success: function (data) {
-
+               
 
                 alert(data);
 
-                $("#presidentdesig").text();
-                $("#presidentname").text();
-                $("#presidentcontent").append();
+                $("#presidentdesig").text(data.Title);
+                $("#presidentname").text(data.Name);
+                $("#presidentcontent").append(data.MainContent);
 
                       
             }
