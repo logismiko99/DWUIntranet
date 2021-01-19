@@ -1,6 +1,7 @@
 ﻿using DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -90,6 +91,47 @@ namespace DAL
                 sqlcommand.Dispose();
             }
             return c;
+        }
+
+        public bool SavePresidentContent(string title, string name, string content, string pageid)
+        {
+            bool isinsetted = false;
+            try
+            {
+                
+
+                sqlcommand = new SqlCommand("sp_update_presidentdesk", sqlconnection);
+                sqlcommand.CommandType = CommandType.StoredProcedure;
+                sqlcommand.Parameters.Add("@title", title);
+                sqlcommand.Parameters.Add("@name", name);
+                sqlcommand.Parameters.Add("@content", content);
+                sqlcommand.Parameters.Add("@pageid", pageid);
+
+                sqlconnection.Open();
+                int output = sqlcommand.ExecuteNonQuery();
+
+                if (output == -1)
+                {
+                    isinsetted = true;
+                }
+                else
+                {
+                    isinsetted = false;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                if (sqlconnection.State == System.Data.ConnectionState.Open)
+                    sqlconnection.Close();
+                sqlcommand.Dispose();
+            }
+
+            return isinsetted;
         }
     }
 }
