@@ -3,13 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
+
 
     <input type="hidden" id="hfpageid" value="PG001" />
     <div class="row">
         <div class="col-md-8">
             <div class="card card-profile">
-                 <div style="text-align: right;font-size: xxx-large;/* margin-top: 0px; */padding-right: 10px;/* padding-top: 10px; */padding-top: 8px;"><a href="editcontent.aspx?pageid=PG001"><i  class="fa fa-edit"></i></a></div>
+                 <div style="text-align: right;font-size: xxx-large;/* margin-top: 0px; */padding-right: 10px;/* padding-top: 10px; */padding-top: 8px;"><a href="editcontent.aspx?pageid=PG001&pgname=presidentdesk.aspx"><i  class="fa fa-edit"></i></a></div>
                 <div class="card-avatar">
                     <a href="#pablo">
                         <img class="img" src="../assets/pics/PGibbs.png" />
@@ -40,13 +40,13 @@
             data: JSON.stringify({ "pageid": pageid }),
             dataType:'json',
             success: function (data) {
-               
+
 
                 $("#presidentdesig").text(data.d.Title);
                 $("#presidentname").text(data.d.Name);
                 $("#presidentcontent").append(data.d.MainContent);
 
-                      
+
             }
         });
 

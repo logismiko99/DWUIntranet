@@ -126,6 +126,45 @@
     <Content Include="assets\js\froala_editor.min.js" />
     <Content Include="assets\js\froala_editor.pkgd.min.js" />
     <Content Include="assets\js\jquery.richtext.min.js" />
+    <Content Include="assets\js\languages\ar.js" />
+    <Content Include="assets\js\languages\bs.js" />
+    <Content Include="assets\js\languages\cs.js" />
+    <Content Include="assets\js\languages\da.js" />
+    <Content Include="assets\js\languages\de.js" />
+    <Content Include="assets\js\languages\el.js" />
+    <Content Include="assets\js\languages\en_ca.js" />
+    <Content Include="assets\js\languages\en_gb.js" />
+    <Content Include="assets\js\languages\es.js" />
+    <Content Include="assets\js\languages\et.js" />
+    <Content Include="assets\js\languages\fa.js" />
+    <Content Include="assets\js\languages\fi.js" />
+    <Content Include="assets\js\languages\fr.js" />
+    <Content Include="assets\js\languages\he.js" />
+    <Content Include="assets\js\languages\hr.js" />
+    <Content Include="assets\js\languages\hu.js" />
+    <Content Include="assets\js\languages\id.js" />
+    <Content Include="assets\js\languages\it.js" />
+    <Content Include="assets\js\languages\ja.js" />
+    <Content Include="assets\js\languages\ko.js" />
+    <Content Include="assets\js\languages\ku.js" />
+    <Content Include="assets\js\languages\me.js" />
+    <Content Include="assets\js\languages\nb.js" />
+    <Content Include="assets\js\languages\nl.js" />
+    <Content Include="assets\js\languages\pl.js" />
+    <Content Include="assets\js\languages\pt_br.js" />
+    <Content Include="assets\js\languages\pt_pt.js" />
+    <Content Include="assets\js\languages\ro.js" />
+    <Content Include="assets\js\languages\ru.js" />
+    <Content Include="assets\js\languages\sk.js" />
+    <Content Include="assets\js\languages\sl.js" />
+    <Content Include="assets\js\languages\sr.js" />
+    <Content Include="assets\js\languages\sv.js" />
+    <Content Include="assets\js\languages\th.js" />
+    <Content Include="assets\js\languages\tr.js" />
+    <Content Include="assets\js\languages\uk.js" />
+    <Content Include="assets\js\languages\vi.js" />
+    <Content Include="assets\js\languages\zh_cn.js" />
+    <Content Include="assets\js\languages\zh_tw.js" />
     <Content Include="assets\js\material-dashboard.js" />
     <Content Include="assets\js\material-dashboard.min.js" />
     <Content Include="assets\js\plugins.pkgd.min.js" />
@@ -183,9 +222,30 @@
     <Content Include="assets\js\plugins\url.min.js" />
     <Content Include="assets\js\plugins\video.min.js" />
     <Content Include="assets\js\plugins\word_paste.min.js" />
-    <Content Include="home.aspx" />
-    <Content Include="homestd.aspx" />
+    <Content Include="assets\js\third_party\embedly.min.js" />
+    <Content Include="assets\js\third_party\font_awesome.min.js" />
+    <Content Include="assets\js\third_party\image_tui.min.js" />
+    <Content Include="assets\js\third_party\spell_checker.min.js" />
+    <Content Include="assets\pics\PGibbs.png" />
+    <Content Include="bin\DAL.dll" />
+    <Content Include="bin\DAL.pdb" />
+    <Content Include="bin\DWUIntranet.dll" />
+    <Content Include="bin\DWUIntranet.pdb" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="login.aspx" />
+    <Content Include="obj\Debug\DWUIntranet.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\DWUIntranet.dll" />
+    <Content Include="obj\Debug\DWUIntranet.pdb" />
     <Content Include="packages.config" />
     <Content Include="assets\css\material-dashboard.css.map" />
     <Content Include="assets\js\material-dashboard.js.map" />
@@ -388,6 +448,13 @@
     <Content Include="assets\scss\material-dashboard\_type.scss" />
     <Content Include="assets\scss\material-dashboard\_variables.scss" />
     <Content Include="Main.Master" />
+    <Content Include="obj\Debug\build.force" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\DWUIntranet.csprojResolveAssemblyReference.cache" />
+    <Content Include="bin\DWUIntranet.dll.config" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -397,27 +464,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="test.aspx" />
+    <Content Include="pghome\home.aspx" />
+    <Content Include="pghome\homestd.aspx" />
+    <Content Include="pgnavibarside\academicaffairs.aspx" />
+    <Content Include="pgnavibarside\boxofideas.aspx" />
+    <Content Include="pgnavibarside\dsr.aspx" />
+    <Content Include="pgnavibarside\editcontent.aspx" />
+    <Content Include="pgnavibarside\events.aspx" />
+    <Content Include="pgnavibarside\financedivision.aspx" />
+    <Content Include="pgnavibarside\friendshiplibrary.aspx" />
+    <Content Include="pgnavibarside\hrmanagement.aspx" />
+    <Content Include="pgnavibarside\ictservice.aspx" />
+    <Content Include="pgnavibarside\news.aspx" />
+    <Content Include="pgnavibarside\presidentdesk.aspx" />
+    <Content Include="pgnavibarside\publicservice.aspx" />
+    <Content Include="pgnavibarside\qualityassurance.aspx" />
+    <Content Include="pgnavibarside\research.aspx" />
+    <Content Include="pgnavibarside\staffdirectory.aspx" />
+    <Content Include="pgnavibarside\studentaffairs.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
-    <Compile Include="home.aspx.cs">
-      <DependentUpon>home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="home.aspx.designer.cs">
-      <DependentUpon>home.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="homestd.aspx.cs">
-      <DependentUpon>homestd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="homestd.aspx.designer.cs">
-      <DependentUpon>homestd.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -433,23 +503,144 @@
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="test.aspx.cs">
-      <DependentUpon>test.aspx</DependentUpon>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="pghome\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="test.aspx.designer.cs">
-      <DependentUpon>test.aspx</DependentUpon>
+    <Compile Include="pghome\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pghome\homestd.aspx.cs">
+      <DependentUpon>homestd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pghome\homestd.aspx.designer.cs">
+      <DependentUpon>homestd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\academicaffairs.aspx.cs">
+      <DependentUpon>academicaffairs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\academicaffairs.aspx.designer.cs">
+      <DependentUpon>academicaffairs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\boxofideas.aspx.cs">
+      <DependentUpon>boxofideas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\boxofideas.aspx.designer.cs">
+      <DependentUpon>boxofideas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\dsr.aspx.cs">
+      <DependentUpon>dsr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\dsr.aspx.designer.cs">
+      <DependentUpon>dsr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\editcontent.aspx.cs">
+      <DependentUpon>editcontent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\editcontent.aspx.designer.cs">
+      <DependentUpon>editcontent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\events.aspx.cs">
+      <DependentUpon>events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\events.aspx.designer.cs">
+      <DependentUpon>events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\financedivision.aspx.cs">
+      <DependentUpon>financedivision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\financedivision.aspx.designer.cs">
+      <DependentUpon>financedivision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\friendshiplibrary.aspx.cs">
+      <DependentUpon>friendshiplibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\friendshiplibrary.aspx.designer.cs">
+      <DependentUpon>friendshiplibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\hrmanagement.aspx.cs">
+      <DependentUpon>hrmanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\hrmanagement.aspx.designer.cs">
+      <DependentUpon>hrmanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\ictservice.aspx.cs">
+      <DependentUpon>ictservice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\ictservice.aspx.designer.cs">
+      <DependentUpon>ictservice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\news.aspx.designer.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\presidentdesk.aspx.cs">
+      <DependentUpon>presidentdesk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\presidentdesk.aspx.designer.cs">
+      <DependentUpon>presidentdesk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\publicservice.aspx.cs">
+      <DependentUpon>publicservice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\publicservice.aspx.designer.cs">
+      <DependentUpon>publicservice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\qualityassurance.aspx.cs">
+      <DependentUpon>qualityassurance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\qualityassurance.aspx.designer.cs">
+      <DependentUpon>qualityassurance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\research.aspx.cs">
+      <DependentUpon>research.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\research.aspx.designer.cs">
+      <DependentUpon>research.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\staffdirectory.aspx.cs">
+      <DependentUpon>staffdirectory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\staffdirectory.aspx.designer.cs">
+      <DependentUpon>staffdirectory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgnavibarside\studentaffairs.aspx.cs">
+      <DependentUpon>studentaffairs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgnavibarside\studentaffairs.aspx.designer.cs">
+      <DependentUpon>studentaffairs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="assets\css\plugins\" />
     <Folder Include="assets\css\themes\" />
     <Folder Include="assets\css\third_party\" />
-    <Folder Include="assets\js\languages\" />
-    <Folder Include="assets\js\third_party\" />
     <Folder Include="Models\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
