@@ -9,8 +9,6 @@
     <div class="row">
         <div class="col-md-8">
             <div class="card card-profile">
-              <div style="text-align: right;font-size: xxx-large;/* margin-top: 0px; */padding-right: 10px;/* padding-top: 10px; */padding-top: 8px;"><a href="editpresidentcontent.aspx"><i  class="fa fa-edit"></i></a></div>
-                
                 <div class="card-avatar">
                     <a href="#pablo">
                         <img class="img" src="../assets/pics/PGibbs.png" />
