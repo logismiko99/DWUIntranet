@@ -62,7 +62,7 @@
 
            $(document).ready(function () {
 
-             
+               var global;
                $.ajax({
                    url: 'editpresidentcontent.aspx/GetContent',
                    method: 'post',
@@ -78,6 +78,7 @@
                        var $iframe = $('iframe');
                        $iframe.ready(function () {
                            $iframe.contents().find("body").append(data.d.MainContent);
+                           global = data.d.MainContent;
                        });
 
                    }
@@ -89,20 +90,27 @@
 
                $("#btnsave").click(function () {
 
+                   var obj = {};
+
+                   if ($("#output").text() == "") {
+
+                       obj = { "title": $("#txttitle").val(), "name": $("#txtname").val(), "content": global, "pageid": 'PG001' }
+
+                   } else {
+                       obj = { "title": $("#txttitle").val(), "name": $("#txtname").val(), "content": $("#output").text(), "pageid": 'PG001' }
+                   }
+
                    $.ajax({
                        url: 'editpresidentcontent.aspx/SaveContent',
                        method: 'post',
                        contentType: 'application/json',
-                       data: JSON.stringify({ "title": $("#txttitle").val(), "name": $("#txtname").val(), "content": $("#output").text(), "pageid": 'PG001' }),
+                       data: JSON.stringify(obj),
                        dataType: 'json',
                        success: function (data) {
 
                            if (data.d == true) {
 
-                              
-
-                                   window.location.href = "presidentdesk.aspx";
-                              
+                             window.location.href = "presidentdesk.aspx";
                               
                            }
 
