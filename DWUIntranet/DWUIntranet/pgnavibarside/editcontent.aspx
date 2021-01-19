@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="editcontent.aspx.cs" Inherits="DWUIntranet.pgnavibarside.editpresidentdesk" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/ui/trumbowyg.min.css" integrity="sha512-iw/TO6rC/bRmSOiXlanoUCVdNrnJBCOufp2s3vhTPyP1Z0CtTSBNbEd5wIo8VJanpONGJSyPOZ5ZRjZ/ojmc7g==" crossorigin="anonymous" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -43,23 +42,12 @@
         
     </div>
 
-     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-      <script src="../assets/js/editor.js"></script>
-    
-    <script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/trumbowyg.min.js" integrity="sha512-sffB9/tXFFTwradcJHhojkhmrCj0hWeaz8M05Aaap5/vlYBfLx5Y7woKi6y0NrqVNgben6OIANTGGlojPTQGEw==" crossorigin="anonymous"></script>
 
-        var ed = new BlackEdit('editor', 'output');
-        ed.init(auto_output = true);
-
-
-
-
-    </script>
     
        <script>
-
+           $('#editor').trumbowyg();
            var params = (new URL(document.location)).searchParams;
            var pageid = params.get("pageid");
 
@@ -76,14 +64,9 @@
 
                        $("#txttitle").val(data.d.Title);
                        $("#txtname").val(data.d.Name);
-                      
+                       $("#editor").append(data.d.MainContent);
 
-                       var $iframe = $('iframe');
-                       $iframe.ready(function () {
-                           $iframe.contents().find("body").append(data.d.MainContent);
-                           global = data.d.MainContent;
-                       });
-
+                     
                    }
                });
 
@@ -93,15 +76,10 @@
 
                $("#btnsave").click(function () {
 
-                   var obj = {};
+                   var obj = { "title": $("#txttitle").val(), "name": $("#txtname").val(), "content": $("#editor")[0].innerHTML, "pageid": pageid }
 
-                   if ($("#output").text() == "") {
+                  
 
-                       obj = { "title": $("#txttitle").val(), "name": $("#txtname").val(), "content": global, "pageid": pageid }
-
-                   } else {
-                       obj = { "title": $("#txttitle").val(), "name": $("#txtname").val(), "content": $("#output").text(), "pageid": pageid }
-                   }
 
                    $.ajax({
                        url: 'editcontent.aspx/SaveContent',
