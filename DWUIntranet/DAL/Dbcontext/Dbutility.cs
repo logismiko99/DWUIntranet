@@ -73,8 +73,8 @@ namespace DAL
                 while (rd.Read())
                 {
 
-                    c.Title = rd["cont_title_other"].ToString();
-                    c.Name = rd["cont_subtitle"].ToString();
+                    c.Title = rd["cont_subtitle"].ToString();
+                    c.Name = rd["cont_title"].ToString();
                     c.MainContent = rd["cont_desc"].ToString();
                 }
             }
