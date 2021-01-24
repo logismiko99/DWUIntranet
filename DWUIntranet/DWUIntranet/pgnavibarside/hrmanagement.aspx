@@ -3,50 +3,57 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="card">
-        <div class="card-header">
-            <h4 class="card-title">Director, Human Resource Managment</h4>
-            <p class="card-category">Human Resource Division</p>
-        </div>
-        <div class="card-body" align="justify">
-            <p style="margin: 1em 0px; padding: 0px;">The Human Resource Division at Divine Word University primarily acknowledges that the staff themselves are an essential and valuable resource for the University. The staff of the University are a resource that contributes immensely to the success of the University itself.&nbsp;</p>
-            <p style="margin: 1em 0px; padding: 0px;">In accord with the University's Charter and its vision and mission, and in cooperation with other departments, the Human Resource Division aims to create a healthy working environment for all staff, whether they be academic, administrative or support staff.</p>
-            <p style="margin: 1em 0px; padding: 0px;">The Human Resource Division deals with various employment matters for all staff of the University at Madang and the four (4) external campuses i.e. Wewak, Rabaul, Port Moresby and Tabubil.</p>
-            <p style="margin: 1em 0px; padding: 0px;">For general enquiries or assistance please email HRM division at&nbsp;<a href="mailto:hrm@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">hrm@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it&nbsp;,&nbsp;<a href="mailto:recruitment@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">recruitment@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it&nbsp;or directly to indivdual officer's email address or on land line 424 1817 or 424 1818.</p>
-            <p style="margin: 1em 0px; padding: 0px;">If using the internal phone connection we can be reached on the following extensions:</p>
+   
+        <input type="hidden" id="hfpageid" value="PG008" />
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card card-profile">
+                 <div style="text-align: right;font-size: xxx-large;/* margin-top: 0px; */padding-right: 10px;/* padding-top: 10px; */padding-top: 8px;"><a href="editcontent.aspx?pageid=PG008&pgname=hrmanagement.aspx"><i  class="fa fa-edit"></i></a></div>
+                <div class="card-avatar">
+                    <a href="#pablo">
+                        <img class="img" src="../assets/pics/PGibbs.png" />
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h6 id="hrdesig" class="card-category text-gray"></h6>
+                    <h4 id="hrname" class="card-title"></h4>
 
-            <ul>
-                <li>817 - Mrs Annette Waide, Director HRM -&nbsp;<a href="mailto:awaide@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">awaide@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it&nbsp;;</li>
-                <li>893 -&nbsp;<strong>Vacant,&nbsp; Deputy Director, HRM</strong></li>
-                <li>851 - Ms Kathleen Tokilivila, HR Administration Officer-FBI&nbsp;</li>
-                <li>818&nbsp; - Ms Helen Tuka, HR Administration Officer-FMHS -&nbsp;<a href="mailto:htuka@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">htuka@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it&nbsp;;</li>
-                <li>818 - Ms Miriam Kulubob, HR Administration Officer-FASS &amp; FOE -&nbsp;<a href="mailto:mkulubob@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">mkulubob@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it</li>
-                <li>803&nbsp; - Ms Fiona Jeyasaleen, HR Administration Officer - (Academic &amp; Admin Divsions) -&nbsp;<a href="mailto:fjeyaseelan@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">fjeyaseelan@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it&nbsp;; and</li>
-                <li>851 - Ms Barbara Tseraha, Housing Officer -&nbsp;<a href="mailto:btseraha@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">btseraha@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it&nbsp;.</li>
-            </ul>
-
-            <p style="margin: 1em 0px; padding: 0px;"><strong>Main Admin Building Reception (Madang Campus only)</strong></p>
-            <ul>
-                <li>800 - Ms Janice Konaigawi, Receptionist</li>
-            </ul>
-            <p style="margin: 1em 0px; padding: 0px;"><strong><span style="text-decoration-line: underline;">Diwai Enterprise Limited</span></strong></p>
-            <ul>
-                <li>&nbsp;<strong>754 - Vacant, DEL HR Officer&nbsp;</strong></li>
-            </ul>
-            <p style="margin: 1em 0px; padding: 0px;"><span style="text-decoration-line: underline;"><span style="color: rgb(0, 0, 0);">External Campuses</span></span></p>
-            <ul>
-                <li>Wewak Campus:-
-                    <ul>
-                        <li>Mr Alphonse Masu, HR Officer -&nbsp;<a href="mailto:amasu@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">amasu@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it</li>
-                        <li>Vacant, Housing Officer-&nbsp;<a href="mailto:dyambukia@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">dyambukia@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it</li>
-                    </ul>
-                </li>
-                <li>Rabaul Campus - Ms Esther Ephraim -&nbsp;<a href="mailto:eephraim@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">eephraim@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it</li>
-                <li>Port Moresby Campus - Ms Salome Seilon - ( Assisting Madang Campus especially with lodgement of work permit, work visa, passport application, etc)&nbsp;<a href="mailto:sseilon@dwu.ac.pg" style="color: rgb(0, 102, 153); text-decoration-line: underline;">sseilon@dwu.ac.pg</a>This e-mail address is being protected from spambots. You need JavaScript enabled to view it&nbsp;&nbsp;</li>
-            </ul>
-            <p style="margin: 1em 0px; padding: 0px;">- HRM is the responsibility of every executive -&nbsp;</p>
+                    <div id="hrcontent" class="card-description">
+                    </div>
+                    <%--                    <a href="#pablo" class="btn btn-rose btn-round">Follow</a>--%>
+                </div>
+            </div>
         </div>
+        <div class="col-md-8"></div>
     </div>
+  <script src="../assets/js/core/jquery.min.js"></script>
+
+    <script>
+
+    $(document).ready(function () {
+        var pageid =$("#hfpageid").val();
+        $.ajax({
+            url: 'hrmanagement.aspx/SetContent',
+            method: 'post',
+            contentType:'application/json',
+            data: JSON.stringify({ "pageid": pageid }),
+            dataType:'json',
+            success: function (data) {
+
+
+                $("#hrdesig").text(data.d.Title);
+                $("#hrname").text(data.d.Name);
+                $("#hrcontent").append(data.d.MainContent);
+
+
+            }
+        });
+
+
+    });
+
+
+</script>
 
     <div class="row" style="margin: 2em 0px;">
         <div class="col-md-12 ml-auto mr-auto">

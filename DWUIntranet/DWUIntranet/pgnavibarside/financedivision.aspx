@@ -4,29 +4,29 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
+         <input type="hidden" id="hfpageid" value="PG009" />
+    <div class="row">
         <div class="col-md-6">
-            <div class="card ">
-                <div class="card-header ">
-                    <h4 class="card-title">Finance at Divine Word University</h4>
+            <div class="card card-profile">
+                 <div style="text-align: right;font-size: xxx-large;/* margin-top: 0px; */padding-right: 10px;/* padding-top: 10px; */padding-top: 8px;"><a href="editcontent.aspx?pageid=PG009&pgname=financedivision.aspx"><i  class="fa fa-edit"></i></a></div>
+                <div class="card-avatar">
+                    <a href="#pablo">
+                        <img class="img" src="../assets/pics/PGibbs.png" />
+                    </a>
                 </div>
-                <div class="card-body" align="justify">
-                    <p style="margin: 1em 0px; padding: 0px;">The Bursar is the officer in charge of the business and financial aspects of DWU administration. He is assisted by a&nbsp;<strong>Senior Manager,</strong>&nbsp;Payroll Officer, Purchasing Officer, Systems Management&nbsp;<strong>Financial Accountant,</strong>&nbsp;Accounts Payable, Accounts Receivable,<strong>&nbsp;Management Accountant,</strong>&nbsp;Divisional Accountant and&nbsp; Commercial Accountant</p>
-                    <p style="margin: 1em 0px; padding: 0px;">The Finance Division provides financial support in the realisation of the Divine Word University Mission and the Division seeks to:</p>
-                    <ul>
-                        <li>Develop an effective financial stewardship rather than merely financial control that would improve operational efficiency.</li>
-                        <li>Ensure the proper allocation of available financial resources consistent with the operational and development needs of the University.</li>
-                        <li>Assure an effective procurement system for goods and services required by the different units of the University.</li>
-                        <li>Maintain an accounting system that would generate accurate and timely financial information for decision-making.</li>
-                        <li>Ascertain the availability of funds for the operational and development needs of the University through efficient cash management.</li>
-                        <li>Maintain an efficient and effective academic information system responsive to the educational needs of the clientele and directly supportive of administrative decision-making.</li>
-                    </ul>
-                    <p style="margin: 1em 0px; padding: 0px;">
-                        <em><strong>DWU accounts are audited by&nbsp;</strong><a href="http://www.pwcglobal.com/" target="_blank" style="color: rgb(0, 102, 153); text-decoration-line: underline;"><strong>Price Waterhouse Coopers</strong></a><strong>&nbsp;annually.</strong></em><br>
-                    </p>
+                <div class="card-body">
+                    <h6 id="fiancedesig" class="card-category text-gray"></h6>
+                    <h4 id="fiancename" class="card-title"></h4>
+
+                    <div id="financecontent" class="card-description">
+                    </div>
+                    <%--                    <a href="#pablo" class="btn btn-rose btn-round">Follow</a>--%>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+
+
+          <div class="col-md-6">
             <div class="card ">
                 <div class="card-header ">
                     <h4 class="card-title">Finance Policies</h4>
@@ -55,5 +55,59 @@
                 </div>
             </div>
         </div>
+       
     </div>
+        <%--<div class="col-md-6">
+           <div class="card ">
+                <div class="card-header ">
+                    <h4 class="card-title">Finance at Divine Word University</h4>
+                </div>
+                <div class="card-body" align="justify">
+                    <p style="margin: 1em 0px; padding: 0px;">The Bursar is the officer in charge of the business and financial aspects of DWU administration. He is assisted by a&nbsp;<strong>Senior Manager,</strong>&nbsp;Payroll Officer, Purchasing Officer, Systems Management&nbsp;<strong>Financial Accountant,</strong>&nbsp;Accounts Payable, Accounts Receivable,<strong>&nbsp;Management Accountant,</strong>&nbsp;Divisional Accountant and&nbsp; Commercial Accountant</p>
+                    <p style="margin: 1em 0px; padding: 0px;">The Finance Division provides financial support in the realisation of the Divine Word University Mission and the Division seeks to:</p>
+                    <ul>
+                        <li>Develop an effective financial stewardship rather than merely financial control that would improve operational efficiency.</li>
+                        <li>Ensure the proper allocation of available financial resources consistent with the operational and development needs of the University.</li>
+                        <li>Assure an effective procurement system for goods and services required by the different units of the University.</li>
+                        <li>Maintain an accounting system that would generate accurate and timely financial information for decision-making.</li>
+                        <li>Ascertain the availability of funds for the operational and development needs of the University through efficient cash management.</li>
+                        <li>Maintain an efficient and effective academic information system responsive to the educational needs of the clientele and directly supportive of administrative decision-making.</li>
+                    </ul>
+                    <p style="margin: 1em 0px; padding: 0px;">
+                        <em><strong>DWU accounts are audited by&nbsp;</strong><a href="http://www.pwcglobal.com/" target="_blank" style="color: rgb(0, 102, 153); text-decoration-line: underline;"><strong>Price Waterhouse Coopers</strong></a><strong>&nbsp;annually.</strong></em><br>
+                    </p>
+                </div>
+            </div>
+        </div>--%>
+      
+    </div>
+
+      <script src="../assets/js/core/jquery.min.js"></script>
+
+    <script>
+
+    $(document).ready(function () {
+        var pageid =$("#hfpageid").val();
+        $.ajax({
+            url: 'financedivision.aspx/SetContent',
+            method: 'post',
+            contentType:'application/json',
+            data: JSON.stringify({ "pageid": pageid }),
+            dataType:'json',
+            success: function (data) {
+
+
+                $("#fiancedesig").text(data.d.Title);
+                $("#fiancename").text(data.d.Name);
+                $("#financecontent").append(data.d.MainContent);
+
+
+            }
+        });
+
+
+    });
+
+
+</script>
 </asp:Content>
