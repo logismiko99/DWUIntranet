@@ -6,17 +6,12 @@
    
         <input type="hidden" id="hfpageid" value="PG008" />
     <div class="row">
-        <div class="col-md-8">
-            <div class="card card-profile">
-                 <div style="text-align: right;font-size: xxx-large;/* margin-top: 0px; */padding-right: 10px;/* padding-top: 10px; */padding-top: 8px;"><a href="editcontent.aspx?pageid=PG008&pgname=hrmanagement.aspx"><i  class="fa fa-edit"></i></a></div>
-                <div class="card-avatar">
-                    <a href="#pablo">
-                        <img class="img" src="../assets/pics/PGibbs.png" />
-                    </a>
-                </div>
-                <div class="card-body">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body" align="justify">
                     <h6 id="hrdesig" class="card-category text-gray"></h6>
                     <h4 id="hrname" class="card-title"></h4>
+                 <div style="text-align: right;font-size: xxx-large;/* margin-top: 0px; */padding-right: 10px;/* padding-top: 10px; */padding-top: 8px;"><a href="editcontent.aspx?pageid=PG008&pgname=hrmanagement.aspx"><i  class="fa fa-edit"></i></a></div>
 
                     <div id="hrcontent" class="card-description">
                     </div>
@@ -24,7 +19,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8"></div>
     </div>
   <script src="../assets/js/core/jquery.min.js"></script>
 
