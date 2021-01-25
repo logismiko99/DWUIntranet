@@ -7,13 +7,8 @@
          <input type="hidden" id="hfpageid" value="PG009" />
     <div class="row">
         <div class="col-md-6">
-            <div class="card card-profile">
+            <div class="card" align="justify">
                  <div style="text-align: right;font-size: xxx-large;/* margin-top: 0px; */padding-right: 10px;/* padding-top: 10px; */padding-top: 8px;"><a href="editcontent.aspx?pageid=PG009&pgname=financedivision.aspx"><i  class="fa fa-edit"></i></a></div>
-                <div class="card-avatar">
-                    <a href="#pablo">
-                        <img class="img" src="../assets/pics/PGibbs.png" />
-                    </a>
-                </div>
                 <div class="card-body">
                     <h6 id="fiancedesig" class="card-category text-gray"></h6>
                     <h4 id="fiancename" class="card-title"></h4>
