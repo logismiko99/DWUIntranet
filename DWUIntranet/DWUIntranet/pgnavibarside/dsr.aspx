@@ -4,16 +4,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-        <input type="hidden" id="hfpageid" value="PG0010" />
+        <input type="hidden" id="hfpageid" value="PG010" />
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card card-profile">
-                 <div style="text-align: right;font-size: xxx-large;/* margin-top: 0px; */padding-right: 10px;/* padding-top: 10px; */padding-top: 8px;"><a href="editcontent.aspx?pageid=PG0010&pgname=dsr.aspx"><i  class="fa fa-edit"></i></a></div>
-                <div class="card-avatar">
-                    <a href="#pablo">
-                        <img class="img" src="../assets/pics/PGibbs.png" />
-                    </a>
-                </div>
+                 <div style="text-align: right;font-size: xxx-large;/* margin-top: 0px; */padding-right: 10px;/* padding-top: 10px; */padding-top: 8px;"><a href="editcontent.aspx?pageid=PG010&pgname=dsr.aspx"><i  class="fa fa-edit"></i></a></div>
+
                 <div class="card-body">
                     <h6 id="dsrdesig" class="card-category text-gray"></h6>
                     <h4 id="dsrname" class="card-title"></h4>
@@ -24,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8"></div>
+
     </div>
   <script src="../assets/js/core/jquery.min.js"></script>
 

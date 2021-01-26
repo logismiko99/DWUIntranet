@@ -16,7 +16,7 @@ namespace DWUIntranet.pgnavibarside
         protected void Page_Load(object sender, EventArgs e)
         {
             (Page.Master.FindControl("activedsr") as HtmlControl).Attributes.Add("class", "active");
-            (Page.Master.FindControl("Label1") as Label).Text = "DSR Division";
+            (Page.Master.FindControl("Label1") as Label).Text = "Development and Self-Reliance";
             (Page.Master.FindControl("sidedash") as HtmlAnchor).HRef = "~/pghome/home.aspx";
         }
 
