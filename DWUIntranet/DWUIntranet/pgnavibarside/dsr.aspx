@@ -92,11 +92,19 @@
             <div class="card card-product">
                 <div class="card-header card-header-image" data-header-animation="true">
                     <a href="#pablo">
-                        <img class="img" src="../assets/pics/dsr/diwai.gif">
+                        <img class="img" src="../assets/pics/dsr/DPHL.jpg ">
                     </a>
                 </div>
                 <div class="card-body">
-
+                     <p style="margin: 1em 0px; padding: 0px;">Diwai Pharmaceuticals Limited (DPhL)<br style="text-align: start;">
+                        <span style="text-align: start;">P.O Box 483, Madang,</span><br style="text-align: start;">
+                        <span style="text-align: start;">Papua New Guinea.</span><br style="text-align: start;">
+                        <span style="text-align: start;">TP : (+675) 4222937</span><br style="text-align: start;">
+                        <span style="text-align: start;">FAX : (+675) 4222812</span><br style="text-align: start;">
+                        <font color="#333333" face="Arial, Helvetica, sans-serif"><span style="font-size: 13px; background-color: rgb(255, 255, 255);">More Information:</span></font>
+                        <br style="text-align: start;">
+                        <span style="text-align: start;">Email :&nbsp;</span><a href="mailto:fhombhanje@dwu.ac.pg" style="text-align: start;">fhombhanje@dwu.ac.pg</a><span style="text-align: start;">This e-mail address is being protected from spambots. You need JavaScript enabled to view it</span><br>
+                    </p>
                     <p style="text-align: justify;">Diwai Pacific Limited&nbsp;is the commercial consulting unit of the Divine Word University (DWU) in Papua New Guinea.</p>
                     <p style="">
                         <p style="text-align: justify;"><span style="background-color: rgb(255, 255, 255); font-size: 13px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif;">More Information:</span></p>
@@ -138,19 +146,17 @@
             <div class="card card-product">
                 <div class="card-header card-header-image" data-header-animation="true">
                     <a href="#pablo">
-                        <img class="img" src="../assets/pics/dsr/DPHL.jpg">
+                        <img class="img" src="../assets/pics/dsr/diwai.gif">
                     </a>
                 </div>
                 <div class="card-body">
-                    <p style="margin: 1em 0px; padding: 0px;">Diwai Pharmaceuticals Limited (DPhL)<br style="text-align: start;">
-                        <span style="text-align: start;">P.O Box 483, Madang,</span><br style="text-align: start;">
-                        <span style="text-align: start;">Papua New Guinea.</span><br style="text-align: start;">
-                        <span style="text-align: start;">TP : (+675) 4222937</span><br style="text-align: start;">
-                        <span style="text-align: start;">FAX : (+675) 4222812</span><br style="text-align: start;">
-                        <font color="#333333" face="Arial, Helvetica, sans-serif"><span style="font-size: 13px; background-color: rgb(255, 255, 255);">More Information:</span></font>
-                        <br style="text-align: start;">
-                        <span style="text-align: start;">Email :&nbsp;</span><a href="mailto:fhombhanje@dwu.ac.pg" style="text-align: start;">fhombhanje@dwu.ac.pg</a><span style="text-align: start;">This e-mail address is being protected from spambots. You need JavaScript enabled to view it</span><br>
-                    </p>
+                   <p style="text-align: justify;">Diwai Pacific Limited&nbsp;is the commercial consulting unit of the Divine Word University (DWU) in Papua New Guinea.</p>
+                    <p style="">
+                        <p style="text-align: justify;"><span style="background-color: rgb(255, 255, 255); font-size: 13px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif;">More Information:</span></p>
+                        <p style="text-align: justify;">
+                            <a target="_blank" href="http://www.diwaipacific.com.pg/" style=""><a target="_blank" href="http://www.diwaipacific.com.pg/" style="background-color: rgb(248, 249, 250); font-size: 1rem;">http://www.diwaipacific.com.pg/</a><br>
+                            </a>
+                        </p>
                 </div>
                 <div class="card-footer">
                     <div class="price">
