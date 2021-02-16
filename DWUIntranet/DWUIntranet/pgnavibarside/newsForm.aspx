@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="newsForm.aspx.cs" Inherits="DWUIntranet.pgnavibarside.boxofideas" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="newsForm.aspx.cs" Inherits="DWUIntranet.pgnavibarside.newsForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -37,7 +37,7 @@
 
                 </div>
                 <div class="card-footer ">
-                  <button type="submit" class="btn btn-fill btn-rose">Submit</button>
+                    <asp:Button ID="btnSubmit" class="btn btn-fill btn-rose" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                 </div>
               </div>
             </div>
