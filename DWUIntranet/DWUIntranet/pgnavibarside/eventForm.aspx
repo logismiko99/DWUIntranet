@@ -51,7 +51,7 @@
                       <label class="col-md-3 col-form-label">Start Time</label>
                       <div class="col-md-9">
                         <div class="form-group ">
-                           <input type="text" class="form-control datepicker" value="" id="startTime" runat="server">
+                           <input type="text" class="form-control timepicker" value="" id="startTime" runat="server">
                         </div>
                       </div>
                     </div>
@@ -62,7 +62,7 @@
                       <label class="col-md-3 col-form-label">End Time</label>
                       <div class="col-md-9">
                         <div class="form-group ">
-                           <input type="text" class="form-control datepicker" value="" id="endTime" runat="server">
+                           <input type="text" class="form-control timepicker" value="" id="endTime" runat="server">
                         </div>
                       </div>
                     </div>
