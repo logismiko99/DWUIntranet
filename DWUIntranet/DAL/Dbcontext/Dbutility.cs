@@ -133,7 +133,88 @@ namespace DAL
 
             return isinsetted;
         }
+
+        public bool SaveNewContent(string title , string content)
+        {
+            bool isinsetted = false;
+            try
+            {
+
+
+                sqlcommand = new SqlCommand("sp_add_newscontent", sqlconnection);
+                sqlcommand.CommandType = CommandType.StoredProcedure;
+                sqlcommand.Parameters.Add("@title", title);
+                sqlcommand.Parameters.Add("@content", content);
+
+                sqlconnection.Open();
+                int output = sqlcommand.ExecuteNonQuery();
+
+                if (output == -1)
+                {
+                    isinsetted = true;
+                }
+                else
+                {
+                    isinsetted = false;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                if (sqlconnection.State == System.Data.ConnectionState.Open)
+                    sqlconnection.Close();
+                sqlcommand.Dispose();
+            }
+
+            return isinsetted;
+        }
+
+        public List<NewsList> GetNewsList()
+        {
+            List<NewsList> lstnews = null;
+            NewsList c = null;
+            try
+            {
+                sqlcommand = new SqlCommand();
+                sqlcommand.Connection = sqlconnection;
+                sqlcommand.CommandText = "sp_getnews_list";
+                sqlcommand.CommandType = System.Data.CommandType.StoredProcedure;
+               
+                sqlconnection.Open();
+                SqlDataReader rd = sqlcommand.ExecuteReader();
+                lstnews = new List<NewsList>();
+                while (rd.Read())
+                {
+                    c = new NewsList();
+                    c.Title = rd["nws_title"].ToString();
+                    c.Content = rd["nws_content"].ToString();
+                    c.NewsDate = rd["nws_date"].ToString();
+
+                    lstnews.Add(c);
+                    
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            finally
+            {
+                if (sqlconnection.State == System.Data.ConnectionState.Open)
+                    sqlconnection.Close();
+                sqlcommand.Dispose();
+            }
+            return lstnews;
+        }
+
     }
+
 }
 
 
