@@ -21,7 +21,7 @@ namespace DWUIntranet.pgnavibarside
             var isinserted = db.SaveNewContent(NewsTitle.Text, NewsContent.Text);
             if (isinserted)
             {
-                Response.Redirect("newslist.aspx");
+                Response.Redirect("news.aspx");
             }
             else
             {
