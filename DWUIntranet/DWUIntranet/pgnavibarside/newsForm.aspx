@@ -18,12 +18,12 @@
 
                     <div class="form-group">
                       <label for="NewsTitle" class="bmd-label-floating">Title</label>
-                        <asp:TextBox runat="server" class="form-control" type="email" ID="NewsTitle"></asp:TextBox>
+                        <asp:TextBox runat="server" class="form-control" type="text" ID="NewsTitle"></asp:TextBox>
 
                     </div>
                     <div class="form-group">
                       <label for="NewsContent" class="bmd-label-floating">News</label>
-                     <asp:TextBox runat="server" class="form-control" type="email" ID="NewsContent"  TextMode="multiline"  Rows="10"></asp:TextBox>
+                     <asp:TextBox runat="server" class="form-control" type="text" ID="NewsContent"  TextMode="multiline"  Rows="10"></asp:TextBox>
                     </div>
                     <div class="form-check">
                       <label class="form-check-label">

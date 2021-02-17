@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,16 @@ namespace DWUIntranet.pgnavibarside
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            Dbutility db = new Dbutility();
+            var isinserted = db.SaveNewContent(NewsTitle.Text, NewsContent.Text);
+            if (isinserted)
+            {
+                Response.Redirect("newslist.aspx");
+            }
+            else
+            {
+                Response.Redirect("newsForm.aspx");
+            }
         }
     }
 }

@@ -26,7 +26,7 @@
 
         <div class="col-lg-6"></div>
         <div class="col-lg-6" style="margin-top: 50px;">
-        <a href="#"><i style="float: right;
+        <a href="newsForm.aspx"><i style="float: right;
     font-size: 45px;" class="fa fa-plus"></i></a>
         </div>
 
@@ -43,7 +43,7 @@
             <tbody>
             
 
-               <tr>
+             <%--  <tr>
                     <td>
 
                    <div class="card ">
@@ -97,7 +97,7 @@
 
                     </td>
 
-                </tr>
+                </tr>--%>
 
               
 
@@ -106,56 +106,44 @@
         </table>
 
 
-        
-               
-        <%--    <table id="example">
- 
-  <tbody>
-    <tr>
-      <div class="heading">News 1</div>
-    </tr>
-    <tr>
-      <div class="heading">News 2</div>
-    </tr>
-    <tr>
-       <div class="heading">News 3</div>
-    </tr>
-    <tr>
-     <div class="heading">News 4</div>
-    </tr>
-      <tr>
-     <div class="heading">News 4</div>
-    </tr>
-      <tr>
-     <div class="heading">News 4</div>
-    </tr>
-      <tr>
-     <div class="heading">News 4</div>
-          <tr>
-     <div class="heading">News 4</div>
-    </tr>
-          <tr>
-     <div class="heading">News 4</div>
-    </tr>
-          <tr>
-     <div class="heading">News 4</div>
-              <tr>
-     <div class="heading">News 4</div>
-    </tr>
-
-    </tr>
-
-    </tr>
-  </tbody>
-</table>--%>
+    
     </div>
 
 
+   
+
     <script>
         $(document).ready(function () {
-            $('#example').DataTable();
+           
+            $.ajax({
+                url: 'newslist.aspx/GetNewsList',
+                method: 'GET',
+                contentType: 'application/json',
+               
+                dataType: 'json',
+                success: function (data) {
+
+
+                    console.log(data);
+                    
+                    for (var i = 0; i < data.d.length; i++) {
+
+                        var HtmlStr = '<tr><td><div class="card "><div class="card-header "><h4 class="card-title">' + data.d[i].Title  + '<br/><small class="description">'    + data.d[0].NewsDate + '</small></h4></div> <div class="card-body "><div class="tab-content tab-space" style="padding:0 !important"> <div class="tab-pane active" id="link1">' + data.d[i].Content + '  </div></div></div></div></td></tr>';
+                        $('#example tbody').append(HtmlStr);
+                    }
+
+                    $('#example').DataTable();
+
+                  
+                }
+            });
+
+
+           
 
         });
     </script>
+
+    
 
 </asp:Content>
