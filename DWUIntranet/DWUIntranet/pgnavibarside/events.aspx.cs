@@ -1,7 +1,10 @@
-﻿using System;
+﻿using DAL;
+using DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -13,5 +16,17 @@ namespace DWUIntranet.pgnavibarside
         {
 
         }
+
+        [System.Web.Services.WebMethod]
+        [ScriptMethod(UseHttpGet = true, ResponseFormat = ResponseFormat.Json)]//Specify return format.
+        public static List<EventContent> GetEventList()
+        {
+            Dbutility db = new Dbutility();
+            var eventlst = db.GetEventList();
+            return eventlst;
+
+        }
+
+
     }
 }

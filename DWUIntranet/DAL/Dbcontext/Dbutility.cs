@@ -266,6 +266,49 @@ namespace DAL
             return isinsetted;
         }
 
+         public List<EventContent> GetEventList()
+        {
+            List<EventContent> lstevent = null;
+            EventContent c = null;
+            try
+            {
+                sqlcommand = new SqlCommand();
+                sqlcommand.Connection = sqlconnection;
+                sqlcommand.CommandText = "sp_getevent_list";
+                sqlcommand.CommandType = System.Data.CommandType.StoredProcedure;
+
+                sqlconnection.Open();
+                SqlDataReader rd = sqlcommand.ExecuteReader();
+                lstevent = new List<EventContent>();
+                while (rd.Read())
+                {
+                    c = new EventContent();
+                    c.EventTitle = rd[0].ToString();
+                    c.FromDate = Convert.ToDateTime(rd[1].ToString()).Date;
+                    c.Venue = rd[2].ToString();
+
+
+
+                    lstevent.Add(c);
+
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            finally
+            {
+                if (sqlconnection.State == System.Data.ConnectionState.Open)
+                    sqlconnection.Close();
+                sqlcommand.Dispose();
+            }
+            return lstevent;
+		
+        }
+
     }
 
 
