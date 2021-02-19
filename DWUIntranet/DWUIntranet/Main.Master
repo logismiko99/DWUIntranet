@@ -30,7 +30,7 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
 
-   
+
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -38,12 +38,13 @@ The above copyright notice and this permission notice shall be included in all c
     <style>
         .tabhide{
             display:none;
-            
+
         }
     </style>
 </head>
 
 <body class="">
+
   <div class="wrapper ">
     <div class="sidebar" data-background-color="black"  data-image="../assets/img/sidebar-1.jpg" data-color="rose" ><%--data-background-color="black" data-image="../assets/img/sidebar-1.jpg"--%>
             <!--
@@ -143,7 +144,7 @@ The above copyright notice and this permission notice shall be included in all c
               <p> ICT Services </p>
             </a>
           </li>
-          <li id="activehrmgt" runat="server"  class="nav-item "> 
+          <li id="activehrmgt" runat="server"  class="nav-item ">
             <a class="nav-link" href="../pgnavibarside/hrmanagement.aspx">
               <i class="material-icons">date_range</i>
               <p> HR Management </p>
@@ -469,7 +470,7 @@ The above copyright notice and this permission notice shall be included in all c
   </div>
   <!--   Core JS Files   -->
 
-   
+
  <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
@@ -513,7 +514,7 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
 
-   
+
 
   <script>
     $(document).ready(function() {
@@ -693,6 +694,15 @@ The above copyright notice and this permission notice shall be included in all c
 
       md.initVectorMap();
 
+    });
+  </script>
+     <script>
+    $(document).ready(function() {
+      // initialise Datetimepicker and Sliders
+      md.initFormExtendedDatetimepickers();
+      if ($('.slider').length != 0) {
+        md.initSliders();
+      }
     });
   </script>
 </body>

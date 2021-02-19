@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace DAL
 {
     public class Dbutility
@@ -98,7 +99,7 @@ namespace DAL
             bool isinsetted = false;
             try
             {
-                
+
 
                 sqlcommand = new SqlCommand("sp_update_presidentdesk", sqlconnection);
                 sqlcommand.CommandType = CommandType.StoredProcedure;
@@ -183,7 +184,7 @@ namespace DAL
                 sqlcommand.Connection = sqlconnection;
                 sqlcommand.CommandText = "sp_getnews_list";
                 sqlcommand.CommandType = System.Data.CommandType.StoredProcedure;
-               
+
                 sqlconnection.Open();
                 SqlDataReader rd = sqlcommand.ExecuteReader();
                 lstnews = new List<NewsList>();
@@ -195,7 +196,7 @@ namespace DAL
                     c.NewsDate = rd["nws_date"].ToString();
 
                     lstnews.Add(c);
-                    
+
                 }
             }
             catch (Exception)
@@ -213,7 +214,53 @@ namespace DAL
             return lstnews;
         }
 
+
+        public bool SaveNewEvent(EventContent Event)
+
+
+        {
+            bool isinsetted = false;
+            try
+            {
+
+
+                //sqlcommand = new SqlCommand("sp_update_presidentdesk", sqlconnection);
+                //sqlcommand.CommandType = CommandType.StoredProcedure;
+                //sqlcommand.Parameters.Add("@title", title);
+                //sqlcommand.Parameters.Add("@name", name);
+                //sqlcommand.Parameters.Add("@content", content);
+                //sqlcommand.Parameters.Add("@pageid", pageid);
+
+                sqlconnection.Open();
+                int output = sqlcommand.ExecuteNonQuery();
+
+                if (output == -1)
+                {
+                    isinsetted = true;
+                }
+                else
+                {
+                    isinsetted = false;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                if (sqlconnection.State == System.Data.ConnectionState.Open)
+                    sqlconnection.Close();
+                sqlcommand.Dispose();
+            }
+
+            return isinsetted;
+        }
+
     }
+
+
 
 }
 

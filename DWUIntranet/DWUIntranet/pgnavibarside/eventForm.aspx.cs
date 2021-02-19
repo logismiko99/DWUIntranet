@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 using DAL.Models;
+using DAL;
 
 namespace DWUIntranet.pgnavibarside
 {
@@ -39,6 +40,17 @@ namespace DWUIntranet.pgnavibarside
             ev.AllowUnRegistration = allowUnReg.SelectedItem.Value.ToString();
             ev.Repetition = DropRetition.SelectedItem.Text.ToString();
             ev.Description = txtDescription.ToString();
+
+            Dbutility db = new Dbutility();
+            var isinserted = db.SaveNewEvent(ev);
+            if (isinserted)
+            {
+                Response.Redirect("event.aspx");
+            }
+            else
+            {
+                Response.Redirect("eventForm.aspx");
+            }
 
 
         }
