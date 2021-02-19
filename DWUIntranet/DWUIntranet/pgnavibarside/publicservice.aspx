@@ -7,7 +7,7 @@
           <div class="container-fluid">
             <div class="row">
 
-    <div class="col-md-6">
+    <div class="col-md-12">
                 <div class="card">
                   <div class="card-header card-header-icon card-header-rose">
                     <div class="card-icon">
@@ -17,7 +17,7 @@
                   </div>
                   <div class="card-body">
                     <div class="table-responsive">
-                      <table class="table">
+                      <table class="education">
                         <thead class=" text-primary">
                           <th>
                             Name of Services
@@ -45,7 +45,12 @@
               </div>
 
 
-                 <div class="col-md-6">
+               
+
+                </div>
+
+              <div class="row">
+                    <div class="col-md-6">
                 <div class="card">
                   <div class="card-header card-header-icon card-header-rose">
                     <div class="card-icon">
@@ -55,7 +60,7 @@
                   </div>
                   <div class="card-body">
                     <div class="table-responsive">
-                      <table class="table">
+                      <table class="emergency">
                        <thead class=" text-primary">
                           <th>
                             Name of Services
@@ -81,12 +86,11 @@
                   </div>
                 </div>
               </div>
-
-                </div>
+              </div>
 
                <div class="row">
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                 <div class="card">
                   <div class="card-header card-header-icon card-header-rose">
                     <div class="card-icon">
@@ -96,7 +100,7 @@
                   </div>
                   <div class="card-body">
                     <div class="table-responsive">
-                      <table class="table">
+                      <table class="health">
                         <thead class=" text-primary">
                           <th>
                             Name of Services
@@ -124,7 +128,11 @@
               </div>
 
 
-                 <div class="col-md-6">
+
+                   </div>
+
+              <div class="row">
+                    <div class="col-md-6">
                 <div class="card">
                   <div class="card-header card-header-icon card-header-rose">
                     <div class="card-icon">
@@ -134,7 +142,7 @@
                   </div>
                   <div class="card-body">
                     <div class="table-responsive">
-                      <table class="table">
+                      <table class="entertainment">
                        <thead class=" text-primary">
                           <th>
                             Name of Services
@@ -160,11 +168,101 @@
                   </div>
                 </div>
               </div>
-
-                   </div>
+              </div>
 
               </div>
             </div>
          </div>
 
+
+    <script src="../assets/js/core/jquery.min.js"></script>
+        <script>
+
+        $(document).ready(function () {
+           
+            $.ajax({
+                url: 'publicservice.aspx/GetEductionList',
+                method: 'GET',
+                contentType: 'application/json',
+               
+                dataType: 'json',
+                success: function (data) {
+
+
+                    console.log(data);
+                    
+                    for (var i = 0; i < data.d.length; i++) {
+
+                        var HtmlStr = '<tr><td>' + data.d[i].Service + '</td><td>' + data.d[i].Address + '</td><td>' + data.d[i].PostalAddress + '</td><td>' + data.d[i].Phone + '</td><td>' + data.d[i].Fax + '</td></tr>';
+                        $('.education tbody').append(HtmlStr);
+                    }
+
+                   
+
+                }
+            });
+            $.ajax({
+                url: 'publicservice.aspx/GetEmergencyService',
+                method: 'GET',
+                contentType: 'application/json',
+
+                dataType: 'json',
+                success: function (data) {
+
+
+                    console.log(data);
+
+                    for (var i = 0; i < data.d.length; i++) {
+
+                        var HtmlStr = '<tr><td>' + data.d[i].Service + '</td><td>' + data.d[i].Address + '</td><td>' + data.d[i].PostalAddress + '</td><td>' + data.d[i].Phone + '</td><td>' + data.d[i].Fax + '</td></tr>';
+                        $('.emergency tbody').append(HtmlStr);
+                    }
+
+
+
+                }
+            });
+            $.ajax({
+                url: 'publicservice.aspx/GetEntertainment',
+                method: 'GET',
+                contentType: 'application/json',
+
+                dataType: 'json',
+                success: function (data) {
+
+
+                    console.log(data);
+
+                    for (var i = 0; i < data.d.length; i++) {
+
+                        var HtmlStr = '<tr><td>' + data.d[i].Service + '</td><td>' + data.d[i].Address + '</td><td>' + data.d[i].PostalAddress + '</td><td>' + data.d[i].Phone + '</td><td>' + data.d[i].Fax + '</td></tr>';
+                        $('.entertainment tbody').append(HtmlStr);
+                    }
+
+
+
+                }
+            });
+            $.ajax({
+                url: 'publicservice.aspx/GetHealthService',
+                method: 'GET',
+                contentType: 'application/json',
+
+                dataType: 'json',
+                success: function (data) {
+
+
+                    console.log(data);
+
+                    for (var i = 0; i < data.d.length; i++) {
+
+                        var HtmlStr = '<tr><td>' + data.d[i].Service + '</td><td>' + data.d[i].Address + '</td><td>' + data.d[i].PostalAddress + '</td><td>' + data.d[i].Phone + '</td><td>' + data.d[i].Fax + '</td></tr>';
+                        $('.health tbody').append(HtmlStr);
+                    }
+
+                }
+            });
+
+        });
+    </script>
 </asp:Content>

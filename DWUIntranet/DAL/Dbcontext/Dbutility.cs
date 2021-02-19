@@ -286,6 +286,8 @@ namespace DAL
                     c.EventTitle = rd[0].ToString();
                     c.FromDate = Convert.ToDateTime(rd[1].ToString());
                     c.Venue = rd[2].ToString();
+                    c.StartTime = rd[3].ToString();
+                    c.EndTime = rd[4].ToString();
 
 
 
@@ -307,6 +309,173 @@ namespace DAL
             }
             return lstevent;
 		
+        }
+
+        public List<PublicService> GetEductionList()
+        {
+            List<PublicService> lstevent = null;
+            PublicService c = null;
+            try
+            {
+                sqlcommand = new SqlCommand();
+                sqlcommand.Connection = sqlconnection;
+                sqlcommand.CommandText = "sp_get_publicservice_education";
+                sqlcommand.CommandType = System.Data.CommandType.StoredProcedure;
+
+                sqlconnection.Open();
+                SqlDataReader rd = sqlcommand.ExecuteReader();
+                lstevent = new List<PublicService>();
+                while (rd.Read())
+                {
+                    c = new PublicService();
+                    c.Service = rd[0].ToString();
+                    c.Address = rd[1].ToString();
+                    c.PostalAddress = rd[2].ToString();
+                    c.Phone = rd[3].ToString();
+                    c.Fax = rd[4].ToString();
+
+                    lstevent.Add(c);
+
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            finally
+            {
+                if (sqlconnection.State == System.Data.ConnectionState.Open)
+                    sqlconnection.Close();
+                sqlcommand.Dispose();
+            }
+            return lstevent;
+        }
+        public List<PublicService> GetEmergencyService()
+        {
+            List<PublicService> lstevent = null;
+            PublicService c = null;
+            try
+            {
+                sqlcommand = new SqlCommand();
+                sqlcommand.Connection = sqlconnection;
+                sqlcommand.CommandText = "sp_get_publicservice_emergencyservice";
+                sqlcommand.CommandType = System.Data.CommandType.StoredProcedure;
+
+                sqlconnection.Open();
+                SqlDataReader rd = sqlcommand.ExecuteReader();
+                lstevent = new List<PublicService>();
+                while (rd.Read())
+                {
+                    c = new PublicService();
+                    c.Service = rd[0].ToString();
+                    c.Address = rd[1].ToString();
+                    c.PostalAddress = rd[2].ToString();
+                    c.Phone = rd[3].ToString();
+                    c.Fax = rd[4].ToString();
+
+                    lstevent.Add(c);
+
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            finally
+            {
+                if (sqlconnection.State == System.Data.ConnectionState.Open)
+                    sqlconnection.Close();
+                sqlcommand.Dispose();
+            }
+            return lstevent;
+        }
+
+        public List<PublicService> GetEntertainment()
+        {
+            List<PublicService> lstevent = null;
+            PublicService c = null;
+            try
+            {
+                sqlcommand = new SqlCommand();
+                sqlcommand.Connection = sqlconnection;
+                sqlcommand.CommandText = "sp_get_publicservice_entertainment";
+                sqlcommand.CommandType = System.Data.CommandType.StoredProcedure;
+
+                sqlconnection.Open();
+                SqlDataReader rd = sqlcommand.ExecuteReader();
+                lstevent = new List<PublicService>();
+                while (rd.Read())
+                {
+                    c = new PublicService();
+                    c.Service = rd[0].ToString();
+                    c.Address = rd[1].ToString();
+                    c.PostalAddress = rd[2].ToString();
+                    c.Phone = rd[3].ToString();
+                    c.Fax = rd[4].ToString();
+
+                    lstevent.Add(c);
+
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            finally
+            {
+                if (sqlconnection.State == System.Data.ConnectionState.Open)
+                    sqlconnection.Close();
+                sqlcommand.Dispose();
+            }
+            return lstevent;
+        }
+
+        public List<PublicService> GetHealthService()
+        {
+            List<PublicService> lstevent = null;
+            PublicService c = null;
+            try
+            {
+                sqlcommand = new SqlCommand();
+                sqlcommand.Connection = sqlconnection;
+                sqlcommand.CommandText = "sp_get_publicservice_healthservice";
+                sqlcommand.CommandType = System.Data.CommandType.StoredProcedure;
+
+                sqlconnection.Open();
+                SqlDataReader rd = sqlcommand.ExecuteReader();
+                lstevent = new List<PublicService>();
+                while (rd.Read())
+                {
+                    c = new PublicService();
+                    c.Service = rd[0].ToString();
+                    c.Address = rd[1].ToString();
+                    c.PostalAddress = rd[2].ToString();
+                    c.Phone = rd[3].ToString();
+                    c.Fax = rd[4].ToString();
+
+                    lstevent.Add(c);
+
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            finally
+            {
+                if (sqlconnection.State == System.Data.ConnectionState.Open)
+                    sqlconnection.Close();
+                sqlcommand.Dispose();
+            }
+            return lstevent;
         }
 
     }
