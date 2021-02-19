@@ -19,7 +19,7 @@ namespace DWUIntranet.pgnavibarside {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtTitle;
+        protected global::System.Web.UI.WebControls.TextBox txtTitle;
         
         /// <summary>
         /// fromDate control.
@@ -46,7 +46,7 @@ namespace DWUIntranet.pgnavibarside {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText startTime;
+        protected global::System.Web.UI.WebControls.TextBox startTime;
         
         /// <summary>
         /// endTime control.
@@ -55,7 +55,7 @@ namespace DWUIntranet.pgnavibarside {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText endTime;
+        protected global::System.Web.UI.WebControls.TextBox endTime;
         
         /// <summary>
         /// venue control.
@@ -109,7 +109,7 @@ namespace DWUIntranet.pgnavibarside {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtDescription;
+        protected global::System.Web.UI.WebControls.TextBox txtDescription;
         
         /// <summary>
         /// btn_submit control.

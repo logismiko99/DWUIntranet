@@ -27,7 +27,8 @@ margin-right:10px;
 					  <label class="col-md-3 col-form-label">Title</label>
 					  <div class="col-md-9">
 						<div class="form-group has-default">
-						  <input type="text" class="form-control" runat="server" id="txtTitle" >
+<%--						  <input type="text" class="form-control" runat="server" id="txtTitle" >--%>
+                            <asp:TextBox class="form-control" value="" id="txtTitle" runat="server"></asp:TextBox>
 						</div>
 					  </div>
 					</div>
@@ -64,7 +65,9 @@ margin-right:10px;
 					  <label class="col-md-3 col-form-label">Start Time</label>
 					  <div class="col-md-9">
 						<div class="form-group ">
-						   <input type="text" class="form-control timepicker" value="" id="startTime" runat="server">
+<%--						   <input type="text" class="form-control timepicker" value="" id="startTime" runat="server">--%>
+                            <asp:TextBox class="form-control timepicker" value="" id="startTime" runat="server"></asp:TextBox>
+
 						</div>
 					  </div>
 					</div>
@@ -75,7 +78,8 @@ margin-right:10px;
 					  <label class="col-md-3 col-form-label">End Time</label>
 					  <div class="col-md-9">
 						<div class="form-group ">
-						   <input type="text" class="form-control timepicker" value="" id="endTime" runat="server">
+<%--						   <input type="text" class="form-control timepicker" value="" id="endTime" runat="server">--%>
+                            <asp:TextBox class="form-control timepicker" value="" id="endTime" runat="server"></asp:TextBox>
 						</div>
 					  </div>
 					</div>
@@ -279,7 +283,7 @@ margin-right:10px;
 				  <div class="row" >
 					  <div class="form-group"style="width:100%">
 					  <label for="exampleEmail" class="bmd-label-floating">Description</label>
-					  <input type="text" class="form-control" id="txtDescription" runat="server" >
+                      <asp:TextBox class="form-control" value="" id="txtDescription" runat="server"></asp:TextBox>
 					</div>
 
 
