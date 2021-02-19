@@ -22,6 +22,7 @@ namespace DWUIntranet.pgnavibarside
 
         protected void btn_submit_Click(object sender, EventArgs e)
         {
+
             List<EventContent> nEve = new List<EventContent>();
             EventContent ev = new EventContent();
 
