@@ -284,7 +284,7 @@ namespace DAL
                 {
                     c = new EventContent();
                     c.EventTitle = rd[0].ToString();
-                    c.FromDate = Convert.ToDateTime(rd[1].ToString()).Date;
+                    c.FromDate = Convert.ToDateTime(rd[1].ToString());
                     c.Venue = rd[2].ToString();
 
 
