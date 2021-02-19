@@ -224,12 +224,20 @@ namespace DAL
             {
 
 
-                //sqlcommand = new SqlCommand("sp_update_presidentdesk", sqlconnection);
-                //sqlcommand.CommandType = CommandType.StoredProcedure;
-                //sqlcommand.Parameters.Add("@title", title);
-                //sqlcommand.Parameters.Add("@name", name);
-                //sqlcommand.Parameters.Add("@content", content);
-                //sqlcommand.Parameters.Add("@pageid", pageid);
+                sqlcommand = new SqlCommand("sp_insert_event", sqlconnection);
+                sqlcommand.CommandType = CommandType.StoredProcedure;
+                sqlcommand.Parameters.Add("@title", Event.EventTitle);
+                sqlcommand.Parameters.Add("@venue", Event.Venue);
+                sqlcommand.Parameters.Add("@ptcategory", Event.Category);
+                sqlcommand.Parameters.Add("@fromdate", Event.FromDate);
+                sqlcommand.Parameters.Add("@todate", Event.ToDate);
+                sqlcommand.Parameters.Add("@starttime", Event.StartTime);
+                sqlcommand.Parameters.Add("@endtime", Event.EndTime);
+                sqlcommand.Parameters.Add("@allowreg", Event.AllowRegistration);
+                sqlcommand.Parameters.Add("@allowunreg", Event.AllowUnRegistration);
+                sqlcommand.Parameters.Add("@repitition", Event.Repetition);
+                sqlcommand.Parameters.Add("@imagepath", Event.ImagePath);
+                sqlcommand.Parameters.Add("@description", Event.Description);
 
                 sqlconnection.Open();
                 int output = sqlcommand.ExecuteNonQuery();

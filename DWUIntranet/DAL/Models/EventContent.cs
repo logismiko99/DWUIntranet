@@ -17,9 +17,9 @@ namespace DAL.Models
 
         public DateTime ToDate { get; set; }
 
-        public TimeSpan StartTime { get; set; }
+        public string StartTime { get; set; }
 
-        public TimeSpan EndTime { get; set; }
+        public string EndTime { get; set; }
 
 
         public string AllowRegistration { get; set; }

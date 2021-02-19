@@ -27,25 +27,27 @@ namespace DWUIntranet.pgnavibarside
             List<EventContent> nEve = new List<EventContent>();
             EventContent ev = new EventContent();
 
-            ev.EventTitle = txtTitle.ToString();
-            ev.FromDate= DateTime.ParseExact(fromDate.ToString(), "dd/MM/yyyy", null);
-            ev.ToDate = DateTime.ParseExact(toDate.ToString(), "dd/MM/yyyy", null);
-            TimeSpan stTime = TimeSpan.Parse(startTime.ToString());
-            ev.StartTime = stTime;
-            TimeSpan edTime = TimeSpan.Parse(endTime.ToString());
-            ev.StartTime = edTime;
+            //cmd.Parameters.AddWithValue("@Date", Convert.ToDateTime(DateTime.Now.ToShortDateString()));
+            //cmd.Parameters.AddWithValue("@Time", Convert.ToDateTime(DateTime.Now.ToString("HH:mm:ss")))
+
+            ev.EventTitle = txtTitle.Text;
+            ev.FromDate= DateTime.ParseExact(fromDate.Text, "MM/dd/yyyy", null);
+            ev.ToDate = DateTime.ParseExact(toDate.Text, "MM/dd/yyyy", null);
+            ev.StartTime = startTime.Text;
+            ev.EndTime = endTime.Text;
             ev.Venue = venue.SelectedItem.Text.ToString();
             ev.Category = category.SelectedItem.Text.ToString();
             ev.AllowRegistration = allowReg.SelectedItem.Value.ToString();
             ev.AllowUnRegistration = allowUnReg.SelectedItem.Value.ToString();
             ev.Repetition = DropRetition.SelectedItem.Text.ToString();
-            ev.Description = txtDescription.ToString();
+            ev.ImagePath = "";
+            ev.Description = txtDescription.Text;
 
             Dbutility db = new Dbutility();
             var isinserted = db.SaveNewEvent(ev);
             if (isinserted)
             {
-                Response.Redirect("event.aspx");
+                Response.Redirect("events.aspx");
             }
             else
             {
