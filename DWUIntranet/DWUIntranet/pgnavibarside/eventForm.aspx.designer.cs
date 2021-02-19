@@ -28,7 +28,7 @@ namespace DWUIntranet.pgnavibarside {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText fromDate;
+        protected global::System.Web.UI.WebControls.TextBox fromDate;
         
         /// <summary>
         /// toDate control.
@@ -37,7 +37,7 @@ namespace DWUIntranet.pgnavibarside {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText toDate;
+        protected global::System.Web.UI.WebControls.TextBox toDate;
         
         /// <summary>
         /// startTime control.

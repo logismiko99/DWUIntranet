@@ -28,8 +28,8 @@ namespace DWUIntranet.pgnavibarside
             EventContent ev = new EventContent();
 
             ev.EventTitle = txtTitle.ToString();
-            ev.FromDate= DateTime.ParseExact(fromDate.ToString(), "dd/MM/yyyy", null);
-            ev.ToDate = DateTime.ParseExact(toDate.ToString(), "dd/MM/yyyy", null);
+            ev.FromDate= DateTime.ParseExact(fromDate.Text, "MM/dd/yyyy", null);
+            ev.ToDate = DateTime.ParseExact(toDate.Text, "MM/dd/yyyy", null);
             TimeSpan stTime = TimeSpan.Parse(startTime.ToString());
             ev.StartTime = stTime;
             TimeSpan edTime = TimeSpan.Parse(endTime.ToString());

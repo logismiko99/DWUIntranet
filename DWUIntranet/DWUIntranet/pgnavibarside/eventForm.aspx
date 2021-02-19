@@ -39,7 +39,9 @@ margin-right:10px;
 					  <label class="col-md-3 col-form-label">From Date</label>
 					  <div class="col-md-9">
 						<div class="form-group ">
-						   <input type="text" class="form-control datepicker" value="" id="fromDate" runat="server">
+<%--						   <input type="text" class="form-control datepicker" value="" id="fromDate" runat="server">--%>
+
+                            <asp:TextBox class="form-control datepicker" value="" id="fromDate" runat="server"></asp:TextBox>
 						</div>
 					  </div>
 					</div>
@@ -50,7 +52,9 @@ margin-right:10px;
 					  <label class="col-md-3 col-form-label">To Date</label>
 					  <div class="col-md-9">
 						<div class="form-group ">
-						   <input type="text" class="form-control datepicker" value="" id="toDate" runat="server">
+<%--						   <input type="text" class="form-control datepicker" value="" id="toDate" runat="server">--%>
+                            <asp:TextBox class="form-control datepicker" value="" id="toDate" runat="server"></asp:TextBox>
+
 						</div>
 					  </div>
 					</div>
