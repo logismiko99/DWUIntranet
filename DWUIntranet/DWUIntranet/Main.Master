@@ -732,7 +732,7 @@ The above copyright notice and this permission notice shall be included in all c
 
       // Delete a record
       table.on('click', '.remove', function(e) {
-        $tr = $(this).closest('tr');
+          $tr = $(this).closest('tr');
         table.row($tr).remove().draw();
         e.preventDefault();
       });
