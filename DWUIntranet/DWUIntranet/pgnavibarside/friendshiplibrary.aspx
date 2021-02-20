@@ -40,23 +40,19 @@
                       <table class="education">
                         <thead class=" text-primary">
                           <th>
-                            Name of Services
+                           Date
                           </th>
                           <th>
-                           Address
+                           Time
                           </th>
-                          <th>
-                            Postal Address
-                          </th>
-                          <th>
-                            Phone
-                          </th>
-                          <th>
-                           Fax
-                          </th>
+
                         </thead>
                         <tbody>
-
+<tr>
+<td>
+    Monday - Thursday
+ </td>
+    </tr>
                         </tbody>
                       </table>
                     </div>

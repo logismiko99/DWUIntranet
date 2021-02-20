@@ -49,23 +49,23 @@
                     <div class="tab-content tab-space">
                         <div class="tab-pane active" id="Index">
                             Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
-                     
+
                             <br />
                             <br />
                             Dramatically visualize customer directed convergence without revolutionary ROI. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
-                     
+
                             <br />
                             <br />
                             This is very nice.
-                   
+
                         </div>
                         <div class="tab-pane" id="Recents">
                             Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
-                     
+
                             <br />
                             <br />
                             Dramatically maintain clicks-and-mortar solutions without functional solutions.
-                   
+
                         </div>
                         <div class="tab-pane" id="New">
                             <div class="row">
@@ -108,11 +108,23 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <label class="col-sm-2 col-form-label">Disabled</label>
+                                                <label class="col-sm-2 col-form-label">Attachement</label>
                                                 <div class="col-sm-10">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" value="Disabled input here.." disabled>
-                                                    </div>
+                               <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+						<div class="fileinput-new thumbnail img-circle">
+						  <img src="../../assets/img/placeholder.jpg" alt="...">
+						</div>
+						<div class="fileinput-preview fileinput-exists thumbnail img-circle"></div>
+						<div>
+						  <span class="btn btn-round btn-rose btn-file">
+							<span class="fileinput-new">Select File</span>
+							<span class="fileinput-exists">Change</span>
+							<input type="file" name="..." />
+						  </span>
+						  <br />
+						  <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+						</div>
+					  </div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -122,7 +134,7 @@
                                                         <label class="form-check-label">
                                                             <input class="form-check-input" type="checkbox" value="">
                                                             Check this box to be notified of replies to this topic.
-                           
+
                                                             <span class="form-check-sign">
                                                                 <span class="check"></span>
                                                             </span>
@@ -156,35 +168,35 @@
                         </div>
                         <div class="tab-pane" id="Replies">
                             Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
-                     
+
                             <br />
                             <br />
                             Dynamically innovate resource-leveling customer service for state of the art customer service.
-                   
+
                         </div>
                         <div class="tab-pane" id="My">
                             Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
-                     
+
                             <br />
                             <br />
                             Dynamically innovate resource-leveling customer service for state of the art customer service.
-                   
+
                         </div>
                         <div class="tab-pane" id="Profiles">
                             Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
-                     
+
                             <br />
                             <br />
                             Dynamically innovate resource-leveling customer service for state of the art customer service.
-                   
+
                         </div>
                         <div class="tab-pane" id="Search">
                             Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
-                     
+
                             <br />
                             <br />
                             Dynamically innovate resource-leveling customer service for state of the art customer service.
-                   
+
                         </div>
                     </div>
                 </div>
@@ -192,7 +204,7 @@
         </div>
     </div>
 
-    
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/trumbowyg.min.js" integrity="sha512-sffB9/tXFFTwradcJHhojkhmrCj0hWeaz8M05Aaap5/vlYBfLx5Y7woKi6y0NrqVNgben6OIANTGGlojPTQGEw==" crossorigin="anonymous"></script>
      <script>
