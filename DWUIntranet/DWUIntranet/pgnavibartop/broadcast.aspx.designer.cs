@@ -13,22 +13,13 @@ namespace DWUIntranet.pgnavibartop {
     public partial class broadcast {
         
         /// <summary>
-        /// category control.
+        /// title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList category;
-        
-        /// <summary>
-        /// txtsubject control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsubject;
+        protected global::System.Web.UI.WebControls.DropDownList title;
         
         /// <summary>
         /// DropDownList1 control.

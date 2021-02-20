@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Web.UI.WebControls;
 
 namespace DAL
 {
@@ -28,9 +28,10 @@ namespace DAL
         {
             try
             {
+                sqlconnection.Open();
                 sqlcommand = new SqlCommand();
                 sqlcommand.Connection = sqlconnection;
-                sqlcommand.CommandText = "SP_GET_USERROLE";
+                sqlcommand.CommandText = "AddNewThread";
                 sqlcommand.CommandType = System.Data.CommandType.StoredProcedure;
                 sqlcommand.Parameters.Add("@USERNAME", username);
                 sqlconnection.Open();
@@ -478,10 +479,36 @@ namespace DAL
             return lstevent;
         }
 
+        public void FillDataTable(DropDownList dropDownList)
+        {
+            try
+            {
+                sqlcommand = new SqlCommand();
+                sqlcommand.Connection = sqlconnection;
+
+                string com = "SELECT subcode,subname FROM tbl_br_subjects";
+                SqlDataAdapter adpt = new SqlDataAdapter(com, sqlconnection);
+                DataTable dt = new DataTable();
+                adpt.Fill(dt);
+
+                dropDownList.DataSource = dt;
+                dropDownList.DataBind();
+                dropDownList.DataTextField = "subname";
+                dropDownList.DataValueField = "subcode";
+                dropDownList.DataBind();
+            }
+            catch (Exception Ex)
+            {
+                throw Ex;
+            }
+            finally
+            {
+                if (sqlconnection.State == System.Data.ConnectionState.Open)
+                    sqlconnection.Close();
+                sqlcommand.Dispose();
+            }
+        }
     }
-
-
-
 }
 
 

@@ -88,9 +88,9 @@
                                                     <div class="form-group">
                                                         <%--                          <input type="text" class="form-control">
                           <span class="bmd-help">A block of help text that breaks onto a new line.</span>--%>
-                                                        <asp:DropDownList runat="server" class="selectpicker" data-size="7" data-style="btn btn-info btn-round btn-sm" ID="category">
-                                                            <asp:ListItem Text="Community Broadcast & Discussion Forum" Value="0"></asp:ListItem>
-                                                            <asp:ListItem Text="Student Discussion Forum" Value="1"></asp:ListItem>
+                                                        <asp:DropDownList runat="server" class="selectpicker" data-size="7" data-style="btn btn-info btn-round btn-sm" ID="title">
+<%--                                                            <asp:ListItem Text="Community Broadcast & Discussion Forum" Value="0"></asp:ListItem>
+                                                            <asp:ListItem Text="Student Discussion Forum" Value="1"></asp:ListItem>--%>
                                                         </asp:DropDownList>
                                                     </div>
                                                 </div>
@@ -163,7 +163,7 @@
                                             <%--                  </form>--%>
                                         </div>
                                         <div class="card-footer ml-auto mr-auto">
-                                            <button type="submit" class="btn btn-rose">Submit</button>
+                                            <button id="btnsave" class="btn btn-rose">Save</button>
                                             <button type="submit" class="btn btn-rose">Cancel</button>
                                         </div>
                                     </div>
@@ -214,5 +214,35 @@
      <script>
          $('#editor').trumbowyg();
 
-        </script>
+    </script>
+
+   
+        <script>
+
+        $(document).ready(function () {
+           
+            $.ajax({
+                url: 'broadcast.aspx/SaveThreads',
+                method: 'POST',
+                contentType: 'application/json',
+                data {}
+                dataType: 'json',
+                success: function (data) {
+
+
+                    console.log(data);
+                    
+                    for (var i = 0; i < data.d.length; i++) {
+
+                        var HtmlStr = '<tr><td>' + data.d[i].EventTitle + '</td><td>' + data.d[i].FromDate + '</td><td>' + data.d[i].Venue + '</td><td>' + data.d[i].StartTime + '</td><td>' + data.d[i].EndTime + '</td></tr>';
+                        $('#datatables tbody').append(HtmlStr);
+                    }
+
+                   
+
+                }
+            });
+
+        });
+    </script>
 </asp:Content>
