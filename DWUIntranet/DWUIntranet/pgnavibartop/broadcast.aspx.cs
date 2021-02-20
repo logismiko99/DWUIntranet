@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 
 using DAL.Models;
 using DAL;
+using System.Web.Script.Services;
 
 namespace DWUIntranet.pgnavibartop
 {
@@ -23,6 +24,19 @@ namespace DWUIntranet.pgnavibartop
             Dbutility Db = new Dbutility();
             Db.FillDataTable(title);
         }
+
+        [System.Web.Services.WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]//Specify return format.
+        public static bool SaveThreads(string subcode,string title, string txt, string filepath, string subscribed, string comment)
+        {
+            Dbutility db = new Dbutility();
+            var isinsert = db.SaveThread(subcode, title,, txt, filepath, subscribed, comment);
+            return isinsert;
+
+        }
+
+
+
 
     }
 }

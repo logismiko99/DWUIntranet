@@ -99,7 +99,7 @@
                                                 <label class="col-sm-2 col-form-label">Subject</label>
                                                 <div class="col-sm-10">
                                                     <div class="form-group">
-                                                        <asp:TextBox class="form-control" value="" ID="txtsubject" runat="server"></asp:TextBox>
+                                                        <input type="text" class="form-control" id="title" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -123,7 +123,7 @@
 						  <span class="btn btn-round btn-rose btn-file">
 							<span class="fileinput-new">Select File</span>
 							<span class="fileinput-exists">Change</span>
-							<input type="file" name="..." />
+							<input type="file" name="..." id="fileinput" />
 						  </span>
 						  <br />
 						  <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
@@ -136,7 +136,7 @@
                                                 <div class="col-sm-10 checkbox-radios">
                                                     <div class="form-check">
                                                         <label class="form-check-label">
-                                                            <input class="form-check-input" type="checkbox" value="">
+                                                            <input class="form-check-input" type="checkbox" value="" id="chkboxsubscribed">
                                                             Check this box to be notified of replies to this topic.
 
                                                             <span class="form-check-sign">
@@ -219,29 +219,40 @@
    
         <script>
 
-        $(document).ready(function () {
-           
-            $.ajax({
-                url: 'broadcast.aspx/SaveThreads',
-                method: 'POST',
-                contentType: 'application/json',
-                data {}
-                dataType: 'json',
-                success: function (data) {
+            $(document).ready(function () {
 
+                $("#btnsave").click(function(){
+                    var issubcribed = $('input[id=chkboxsubscribed]:checked');
+                    var subscribed='';
+                    if (issubcribed) {
+                        subscribed = 'Y';
 
-                    console.log(data);
-                    
-                    for (var i = 0; i < data.d.length; i++) {
-
-                        var HtmlStr = '<tr><td>' + data.d[i].EventTitle + '</td><td>' + data.d[i].FromDate + '</td><td>' + data.d[i].Venue + '</td><td>' + data.d[i].StartTime + '</td><td>' + data.d[i].EndTime + '</td></tr>';
-                        $('#datatables tbody').append(HtmlStr);
+                    }else{
+                        subscribed ='N';
                     }
+           
+                    $.ajax({
+                        url: 'broadcast.aspx/SaveThreads',
+                        method: 'post',
+                        contentType: 'application/json',
+                       
+                        data: JSON.stringify({ "subcode": $('#<%= title.ClientID %>').val(), "title": $("#title").val(), "txt": $("#editor").text(), "filepath": $("#fileinput").val().replace(/C:\\fakepath\\/i, ''), "subscribed": subscribed, "comment": $('#<%= DropDownList1.ClientID %>').val() }),
+                        dataType: 'json',
+                        success: function (data) {                                                                                                                                                                          
+                            
+                                                                                                                                                                                                                                            
+                            console.log(data);
 
-                   
 
-                }
-            });
+                        }
+
+
+
+                    });
+                           
+                });
+
+        
 
         });
     </script>
