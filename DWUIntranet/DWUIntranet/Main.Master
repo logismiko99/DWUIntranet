@@ -306,7 +306,7 @@ The above copyright notice and this permission notice shall be included in all c
                             <a class="btn btn-primary" href="#">DWU Website</a>
                             <a class="btn btn-primary" href="#" runat="server" id="nav1">Policy Library</a>
                             <a class="btn btn-primary" href="#" runat="server" id="nav2">DWU Plans</a>
-                            <a class="btn btn-primary" href="#" runat="server" id="nav3">Broadcast</a>
+                            <a class="btn btn-primary" href="~/pgnavibartop/broadcast.aspx" runat="server" id="nav3">Broadcast</a>
                             <div class="btn-group" role="group">
                                 <button id="btnGroupDrop4" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Email
